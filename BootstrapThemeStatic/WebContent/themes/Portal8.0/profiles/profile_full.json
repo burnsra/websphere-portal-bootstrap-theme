@@ -1,0 +1,303 @@
+﻿{
+   "moduleIDs": [
+      "wp_theme_portal_80",
+      "wp_portlet_css",
+      "wp_one_ui",
+      "wp_one_ui_dijit",
+      "wp_legacy_layouts",
+      "wp_client_ext",
+      "wp_status_bar",
+      "wp_theme_menus",
+      "wp_theme_skin_region",
+      "wp_theme_high_contrast",
+      "wp_layout_windowstates",
+      "wp_theme_edit",
+      "wp_project_menu",
+      "wp_preview",
+      "wp_portal",
+      "wp_theme_widget",
+      "wp_toolbar",
+      "wp_project_menu_edit",
+      "wp_preview_menu",
+      "wp_tagging_rating",
+      "wp_tagging_rating_opensearch",
+      "wp_liveobject_framework",
+      "wp_analytics",
+      "wp_analytics_aggregator",
+      "wp_federated_documents_picker",
+      "wp_content_mapping_picker",
+      "wp_pagebuilder_controls",
+      "wp_pagebuilder_dnd",
+      "mm_new_page_dialog",
+      "mm_builder_wiring",
+      "mm_move_page",
+      "mm_delete_page",
+      "mm_delete_control",
+      "mm_page_sharing_permission",
+      "wp_template_select_dialog",
+      "wp_oob_sample_styles",
+      "wp_contextmenu_live_object",
+      "wp_content_targeting_cam",
+      "wcm_inplaceEdit"
+   ],
+   "titles": [
+      {
+         "value": "كامل",
+         "lang": "ar"
+      },
+      {
+         "value": "Complet",
+         "lang": "ca"
+      },
+      {
+         "value": "Úplná",
+         "lang": "cs"
+      },
+      {
+         "value": "Fuld",
+         "lang": "da"
+      },
+      {
+         "value": "Vollständig",
+         "lang": "de"
+      },
+      {
+         "value": "Πλήρες",
+         "lang": "el"
+      },
+      {
+         "value": "Full",
+         "lang": "en"
+      },
+      {
+         "value": "Completa",
+         "lang": "es"
+      },
+      {
+         "value": "Täysi",
+         "lang": "fi"
+      },
+      {
+         "value": "Complet",
+         "lang": "fr"
+      },
+      {
+         "value": "מלא",
+         "lang": "iw"
+      },
+      {
+         "value": "Pun",
+         "lang": "hr"
+      },
+      {
+         "value": "Teljes",
+         "lang": "hu"
+      },
+      {
+         "value": "Completa",
+         "lang": "it"
+      },
+      {
+         "value": "すべて",
+         "lang": "ja"
+      },
+      {
+         "value": "Толық",
+         "lang": "kk"
+      },
+      {
+         "value": "마감",
+         "lang": "ko"
+      },
+      {
+         "value": "Volledig",
+         "lang": "nl"
+      },
+      {
+         "value": "Full",
+         "lang": "no"
+      },
+      {
+         "value": "Pełna",
+         "lang": "pl"
+      },
+      {
+         "value": "Completa",
+         "lang": "pt"
+      },
+      {
+         "value": "Completa",
+         "lang": "pt_BR"
+      },
+      {
+         "value": "Plin",
+         "lang": "ro"
+      },
+      {
+         "value": "Полный",
+         "lang": "ru"
+      },
+      {
+         "value": "Úplný",
+         "lang": "sk"
+      },
+      {
+         "value": "Celotno",
+         "lang": "sl"
+      },
+      {
+         "value": "Full",
+         "lang": "sv"
+      },
+      {
+         "value": "สมบูรณ์",
+         "lang": "th"
+      },
+      {
+         "value": "Tam",
+         "lang": "tr"
+      },
+      {
+         "value": "Повний",
+         "lang": "uk"
+      },
+      {
+         "value": "完整",
+         "lang": "zh"
+      },
+      {
+         "value": "完整",
+         "lang": "zh_TW"
+      }
+   ],
+   "descriptions": [
+      {
+         "value": "ملف المواصفات هذا يحتوي على مجموعة كاملة من وحدات البرامج للنسق الرئيسي متضمنا وحدات البرامج المطلوبة للمستخدمين لتغيير الصفحات.",
+         "lang": "ar"
+      },
+      {
+         "value": "Aquest perfil inclou un conjunt complet de mòduls per al tema incloent-hi els mòduls necessaris perquè els usuaris canviïn les pàgines.",
+         "lang": "ca"
+      },
+      {
+         "value": "Tento profil má úplnou sadu modulů pro motiv, včetně modulů, které uživatelé potřebují ke změnám stránek.",
+         "lang": "cs"
+      },
+      {
+         "value": "Denne profil har et fuldt sæt moduler til temaet, herunder moduler som brugerne skal anvende for at ændre sider.",
+         "lang": "da"
+      },
+      {
+         "value": "Dieses Profil enthält eine vollständige Gruppe von Modulen für das Motiv, einschließlich der Module, die Benutzer zum Ändern von Seiten benötigen.",
+         "lang": "de"
+      },
+      {
+         "value": "Αυτό το προφίλ περιέχει ένα πλήρες σύνολο λειτουργικών μονάδων για το θέμα, συμπεριλαμβανομένων των λειτουργικών μονάδων που απαιτούνται για την αλλαγή σελίδων από τους χρήστες.",
+         "lang": "el"
+      },
+      {
+         "value": "This profile has a full set of modules for the theme including modules needed for users to change pages.",
+         "lang": "en"
+      },
+      {
+         "value": "Este perfil tiene un conjunto de módulos completo para el tema incluidos los módulos necesarios para que los usuarios cambien las páginas.",
+         "lang": "es"
+      },
+      {
+         "value": "Tässä profiilissa on täysi teeman moduulijoukko, johon kuuluvat moduulit, joiden avulla käyttäjät vaihtavat sivua.",
+         "lang": "fi"
+      },
+      {
+         "value": "Ce profil possède un ensemble complet de modules pour le thème, incluant les modèles requis par les utilisateurs pour changer les pages.",
+         "lang": "fr"
+      },
+      {
+         "value": "פרופיל זה כולל מערך שלם של מודולים עבור הערכה, כולל מודולים הדרושים למשתמשים לצורך שינוי דפים.",
+         "lang": "iw"
+      },
+      {
+         "value": "Ovaj profil ima puni skup modula za temu, uključujući module potrebne korisnicima za mijenjanje stranica.",
+         "lang": "hr"
+      },
+      {
+         "value": "Ez a profil a téma teljes modulkészletét tartalmazza, azokat a modulokat is beleértve, amelyekre a felhasználóknak az oldalak módosításához szükségük van.",
+         "lang": "hu"
+      },
+      {
+         "value": "Questo profilo ha una serie completa di moduli per il tema, inclusi i moduli necessari agli utenti per modificare le pagine.",
+         "lang": "it"
+      },
+      {
+         "value": "このプロファイルにはテーマに関するすべてのモジュールのセットがあり、ユーザーがページを変更するために必要なモジュールも含まれています。",
+         "lang": "ja"
+      },
+      {
+         "value": "Осы профайлда беттерді өзгерту үшін пайдаланушыларға қажет модульдерді қамтитын тақырыпқа арналған модульдердің толық жиыны бар.",
+         "lang": "kk"
+      },
+      {
+         "value": "이 프로파일에는 사용자가 페이지를 변경하는 데 필요한 모듈을 비롯하여 테마의 전체 모듈 세트가 있습니다.",
+         "lang": "ko"
+      },
+      {
+         "value": "Dit profiel heeft een volledige set modules voor het thema, waaronder modules die de gebruikers nodig hebben om pagina's te wijzigen.",
+         "lang": "nl"
+      },
+      {
+         "value": "Denne profilen har et fullstendig sett med moduler for temaet, inkludert moduler som kreves for at brukere skal kunne endre sider.",
+         "lang": "no"
+      },
+      {
+         "value": "Ten profil zawiera pełny zestaw modułów kompozycji, w tym moduły służące użytkownikom do modyfikowania stron.",
+         "lang": "pl"
+      },
+      {
+         "value": "Este perfil tem um conjunto completo de módulos para o tema, incluindo os módulos necessários para que os utilizadores alterem páginas.",
+         "lang": "pt"
+      },
+      {
+         "value": "Esse perfil tem um conjunto completo de módulos para o tema, incluindo os módulos necessários para os usuários alterarem as páginas.",
+         "lang": "pt_BR"
+      },
+      {
+         "value": "Acest profil are set complet de module pentru temă, inclusiv module necesitate de utilizatori pentru a modifica pagini.",
+         "lang": "ro"
+      },
+      {
+         "value": "Этот профайл содержит полный набор модулей для темы, включая модули, с помощью которых пользователи могут внести изменения в страницы.",
+         "lang": "ru"
+      },
+      {
+         "value": "Tento profil má úplnú množinu modulov pre tému vrátane modulov, ktoré potrebujú užívateľa pre zmenu stránok.",
+         "lang": "sk"
+      },
+      {
+         "value": "Ta profil vsebuje celoten nabor modulov za teme, vključno z moduli, ki so potrebni, da lahko uporabniki spreminjajo strani.",
+         "lang": "sl"
+      },
+      {
+         "value": "Profilen har en fullständig uppsättning moduler för temat, inklusive moduler som krävs för att användare ska kunna ändra sidor.",
+         "lang": "sv"
+      },
+      {
+         "value": "โปรไฟล์นี้มีชุดที่สมบูรณ์ของโมดูลสำหรับธีมที่มีโมดูลที่ผู้ใช้ต้องการเพื่อเปลี่ยนเพจ",
+         "lang": "th"
+      },
+      {
+         "value": "Bu tanıtım, kullanıcıların sayfa değiştirmek için gerek duydukları birimler de içinde olmak üzere, temayla ilgili tüm birim kümesini içerir.",
+         "lang": "tr"
+      },
+      {
+         "value": "Цей профайл містить повний набір модулів для теми, включаючи модулі, за допомогою яких користувачі змінюють сторінки.",
+         "lang": "uk"
+      },
+      {
+         "value": "此概要文件具有主题的完整模块集，包括用户更改页面所需的模块。",
+         "lang": "zh"
+      },
+      {
+         "value": "這個設定檔包含佈景主題的完整模組集，包括使用者變更頁面所需要的模組。",
+         "lang": "zh_TW"
+      }
+   ]
+}

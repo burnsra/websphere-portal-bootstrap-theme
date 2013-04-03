@@ -1,0 +1,47 @@
+([{
+	bundlePackage: "com.ibm.bundles",
+	bundleName: "Shelf",
+	bundleKey: "utb_overview",
+	iconClass: "",
+	ordinal: 1,
+	enabled: true,
+	metadata: {},
+	actionFn: ibm.toolbar.showOverview,
+	id: "ShelfActions:overview"
+},
+{
+	bundlePackage: "com.ibm.bundles",
+	bundleName: "Shelf",
+	bundleKey: "add_content_launchLabel",
+	iconClass: "",
+	ordinal: 10,
+	enabled: true,
+	metadata: {},
+	actionFn: com.ibm.pb.contextMenu.sharedActions.showAddContent,
+	visibilityFn: ibm.toolbar.confirmShowAddContent,
+	id: "ShelfActions:addContent"
+},
+{
+	bundlePackage: "com.ibm.bundles",
+	bundleName: "Shelf",
+	bundleKey: "change_style_launchLabel",
+	iconClass: "",
+	ordinal: 20,
+	enabled: true,
+	metadata: {},
+	actionFn: com.ibm.pb.contextMenu.sharedActions.showChangeStyle,
+	visibilityFn: ibm.toolbar.confirmShowChangeStyle,
+	id: "ShelfActions:changeStyle"
+},
+{
+	bundlePackage: "com.ibm.bundles",
+	bundleName: "Shelf",
+	bundleKey: "change_layout_launchLabel",
+	iconClass: "",
+	ordinal: 30,
+	enabled: true,
+	metadata: {},
+	actionFn: com.ibm.pb.contextMenu.sharedActions.showChangeLayout,
+	visibilityFn: ibm.toolbar.confirmShowChangeLayout,
+	id: "ShelfActions:changeLayout"
+}])

@@ -1,0 +1,13 @@
+{ "modules":[
+	 {
+		"id" : "wp_one_ui",
+		"prereqs" : [{
+			"id" : "wp_one_ui_30"
+		}]
+	}, {
+		"id" : "wp_one_ui_dijit",
+		"prereqs" : [{
+			"id" : "wp_one_ui_dijit_30"
+		}]
+	}
+]}

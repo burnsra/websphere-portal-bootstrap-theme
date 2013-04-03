@@ -1,0 +1,226 @@
+<%-- Licensed Materials - Property of IBM, 5724-E76, (C) Copyright IBM Corp. 2001, 2004, 2006, 2010 - All Rights reserved.
+	 NOTE: See notes in Default.jsp for information regarding editing theme JSP fragments. --%>
+<%@ page import="java.net.URI,
+java.net.URISyntaxException,
+java.util.HashMap,
+java.util.concurrent.ConcurrentHashMap,
+java.util.Map,
+java.util.Locale,
+java.util.List,
+java.util.Collections,
+java.io.StringWriter,
+java.io.IOException,
+com.ibm.portal.identification.Identification,
+com.ibm.portal.um.PumaEnvironment,
+com.ibm.portal.serialize.SerializationException,
+com.ibm.portal.ObjectID,
+com.ibm.portal.navigation.NavigationNode,
+com.ibm.portal.admin.Theme,
+com.ibm.portal.admin.ThemeList,
+com.ibm.portal.model.LocalizedContext,
+com.ibm.portal.MetaData,
+com.ibm.portal.resolver.service.PortalPocService,
+com.ibm.portal.resolver.data.DataSource,
+com.ibm.portal.resolver.data.DataSourceFactoryEx,
+com.ibm.portal.resolver.accessors.ContextAccessor,
+com.ibm.portal.resolver.accessors.url.PocURLFactory,
+com.ibm.portal.resolver.PocURL,
+com.ibm.portal.ModelException,
+com.ibm.portal.state.exceptions.StateException,
+com.ibm.portal.state.exceptions.OutputMediatorException,
+com.ibm.portal.state.exceptions.PostProcessorException,
+com.ibm.portal.state.exceptions.StateManagerException"
+%>
+<%!private static com.ibm.portal.model.NavigationSelectionModelHome navigationSelectionModelHome;
+private static com.ibm.portal.resolver.service.PortalPocServiceHome pocHome;
+private static com.ibm.portal.portlet.service.PortletServiceHome portletServiceHome;
+private static com.ibm.portal.portlet.service.impersonation.ImpersonationService impersonationHome;
+private static com.ibm.portal.model.PortalLocalizedContextHome localizedContextHome;
+private static com.ibm.portal.ac.AccessControlHome acHome;
+private static com.ibm.portal.model.ThemeListHome themeListHome;
+private static Identification identification;
+private static DataSourceFactoryEx dataSourceFactory;
+public static boolean isImpersonationEnabled = false;
+
+public void jspInit() {
+	javax.naming.Context ctx = null;
+	try	{
+		// only perform this JNDI lookup once as this is an expensive call performance wise
+		ctx = new javax.naming.InitialContext();
+		localizedContextHome = (com.ibm.portal.model.PortalLocalizedContextHome) ctx.lookup(com.ibm.portal.model.PortalLocalizedContextHome.JNDI_NAME);
+		acHome = (com.ibm.portal.ac.AccessControlHome) ctx.lookup(com.ibm.portal.ac.AccessControlHome.JNDI_NAME);
+		navigationSelectionModelHome = (com.ibm.portal.model.NavigationSelectionModelHome) ctx.lookup("portal:service/model/NavigationSelectionModel");
+		pocHome = (com.ibm.portal.resolver.service.PortalPocServiceHome) ctx.lookup( "portal:service/resolver/PocService" );
+		themeListHome = (com.ibm.portal.model.ThemeListHome) ctx.lookup( com.ibm.portal.model.ThemeListHome.JNDI_NAME );
+		javax.naming.Name idName = new javax.naming.CompositeName(Identification.JNDI_NAME);
+		identification = (Identification) ctx.lookup(idName);
+	} catch ( javax.naming.NamingException ne ) {
+		// error has already been created as entry in Portal system logs
+		ne.printStackTrace();
+	}
+	try {
+		dataSourceFactory = pocHome.getDataSourceFactory(true);
+		portletServiceHome = (com.ibm.portal.portlet.service.PortletServiceHome)ctx.lookup(com.ibm.portal.portlet.service.impersonation.ImpersonationService.JNDI_NAME);
+		if(portletServiceHome != null) {
+			impersonationHome = (com.ibm.portal.portlet.service.impersonation.ImpersonationService) portletServiceHome.getPortletService(com.ibm.portal.portlet.service.impersonation.ImpersonationService.class);
+			if( impersonationHome != null ) { 
+				isImpersonationEnabled = true;
+			}
+		}
+	} catch ( javax.naming.NamingException ne ) {
+		// impersonation is not present
+	} catch ( com.ibm.portal.portlet.service.PortletServiceUnavailableException psue ) {
+		// impersonation is not present
+	} 
+	
+	ServletContext servletCtx = getServletConfig().getServletContext();
+	// Using URI objects that are known a-priori performs better when using resolver url and datasource tags
+	servletCtx.setAttribute("com.ibm.themes.PageBuilder2.themeMap.public", new ConcurrentHashMap<String, Map>());
+	servletCtx.setAttribute("com.ibm.themes.PageBuilder2.themeMap.protected", new ConcurrentHashMap<String, Map>());
+	
+	
+	String[] navHiddenMetadataKeys = {
+		"com.ibm.portal.rendertype",
+		"param.sharing.scope",		// needed for WCM rendering
+		"com.ibm.portal.Hidden",
+		"com.ibm.portal.cp.tagging.isTaggingDisabled",
+		"com.ibm.portal.cp.rating.isRatingDisabled",
+		"com.ibm.portal.theme.template.file.name.html",
+		"com.ibm.portal.layout.template.ref",
+		"com.ibm.portal.friendly.name",
+		"com.ibm.portal.static.page.file.name.html"};
+	List navHiddenMetadata = java.util.Arrays.asList(navHiddenMetadataKeys);
+	servletCtx.setAttribute("navHiddenMetadata", navHiddenMetadata);
+	servletCtx.setAttribute("framework", "full");
+	servletCtx.setAttribute("portalContext", com.ibm.wps.services.config.Config.URI_CONTEXT_PATH);
+	servletCtx.setAttribute("isImpersonationEnabled", isImpersonationEnabled);
+}
+
+private String createURL(PocURLFactory urlFct, URI uri, Map<String, String[]> params, Boolean isProtected) throws IOException, StateException, OutputMediatorException, PostProcessorException{
+	PocURL url = urlFct.newURL(Boolean.FALSE);
+	if(uri != null) {
+		url.setURI(uri);
+	}
+	if(params != null) {
+		url.getParameters().putAll(params);
+	}
+	url.setMode("download");
+	if(isProtected != null) {
+		url.setProtected(isProtected);
+	}
+	StringWriter sw = new StringWriter();
+	url.writeDispose(sw);
+	return sw.toString();
+}
+
+private void initRequest(PageContext pageContext) throws ModelException, SerializationException, StateException, URISyntaxException, StateManagerException, IOException, 
+		OutputMediatorException, PostProcessorException {
+	PortalPocService pocSvc = pocHome.getPortalPocService((HttpServletRequest)pageContext.getRequest(), (HttpServletResponse)pageContext.getResponse());
+	PocURLFactory urlFct = pocSvc.getURLFactory();
+	
+	Boolean isProtected = (Boolean)pageContext.getAttribute("isAuthenticated", PageContext.REQUEST_SCOPE);
+	
+	ContextAccessor contextAccessor = pocSvc.getContextAccessor();
+	com.ibm.portal.resolver.ServletContext context = pocSvc.getContext();
+	URI davURI = pocSvc.createURI("dav","fs-type1/common-resources/ibm/css/portal/ibmPortlets.css");
+	DataSource davDataSource = dataSourceFactory.newSource(davURI, "download", Collections.EMPTY_MAP, context);
+	String digest = contextAccessor.getDigest(davDataSource);
+	
+	Map<String,Map> themeMap = null;
+	if(!isProtected) {
+		themeMap = (Map<String,Map>)pageContext.getAttribute("com.ibm.themes.PageBuilder2.themeMap.public", PageContext.APPLICATION_SCOPE);
+	}
+	else {
+		themeMap = (Map<String,Map>)pageContext.getAttribute("com.ibm.themes.PageBuilder2.themeMap.protected", PageContext.APPLICATION_SCOPE);
+	}
+	String themeID = (String)pageContext.getAttribute("currentThemeID", PageContext.REQUEST_SCOPE);
+	String urlMapKey = themeID + digest;
+	ThemeList themeList = themeListHome.getThemeListProvider().getThemeList(pageContext.getRequest());
+	Theme currentTheme = (Theme)themeList.getLocator().findByID(identification.deserialize(themeID));
+	MetaData themeMeta = (MetaData)currentTheme;
+	String themeWebDAVBaseURI = (String)themeMeta.getValue("com.ibm.portal.theme.template.ref");
+	pageContext.setAttribute("themeWebDAVBaseURI", themeWebDAVBaseURI, PageContext.REQUEST_SCOPE);
+	
+	Map<String, String> urlMap = null;
+	if(!themeMap.containsKey(urlMapKey)) {
+		// Generate public URLs to static resources and cache them in a map to be reused
+		// for this theme by all subsequent requests
+		urlMap = new HashMap<String, String>();
+		themeMap.put(urlMapKey, urlMap);
+		
+		// portalIcon
+		urlMap.put("portalIcon", createURL(urlFct, new URI(themeWebDAVBaseURI + "images/favicon.ico"), null, isProtected));		
+	}
+	else {
+		urlMap = (Map<String, String>)themeMap.get(urlMapKey);
+	}
+	
+	pageContext.setAttribute("urlMap", urlMap, PageContext.REQUEST_SCOPE);
+	
+	List<NavigationNode> selectionPath = (List<NavigationNode>)pageContext.getAttribute("selectionPath", PageContext.REQUEST_SCOPE);
+	Map<String, Object> aggMDContent = (Map<String, Object>)pageContext.getAttribute("aggMDContent", PageContext.REQUEST_SCOPE);
+	Map<String, Object> aggMD = (Map<String, Object>)pageContext.getAttribute("aggMD", PageContext.REQUEST_SCOPE);
+	Map<String, Object> dirMD = (Map<String, Object>)pageContext.getAttribute("dirMD", PageContext.REQUEST_SCOPE);
+	
+	NavigationNode currentNavNode = (NavigationNode) pageContext.getAttribute("currentNavNode", PageContext.REQUEST_SCOPE);
+	pageContext.setAttribute("currentNavNodeID", identification.serialize(currentNavNode.getObjectID()), PageContext.REQUEST_SCOPE);
+	pageContext.setAttribute("currentContentNodeID", identification.serialize(currentNavNode.getContentNode().getObjectID()), PageContext.REQUEST_SCOPE);
+
+	
+	String themeTemplateURI = null;
+	String themeTemplateFileName;
+	if((String)aggMD.get("com.ibm.portal.theme.inherited.template.file.name.html") != null) {
+		themeTemplateFileName = (String)aggMD.get("com.ibm.portal.theme.inherited.template.file.name.html");
+	} else {
+		themeTemplateFileName = (String)dirMD.get("com.ibm.portal.theme.template.file.name.html");
+	}
+	if(themeWebDAVBaseURI == null || themeWebDAVBaseURI.length() == 0) {
+		themeTemplateURI = "";
+	}
+	else if(themeTemplateFileName == null || themeTemplateFileName.length() == 0) {
+		themeTemplateURI = themeWebDAVBaseURI + "theme.html";
+	}
+	else {
+		themeTemplateURI = themeWebDAVBaseURI + themeTemplateFileName;
+	}	
+	pageContext.setAttribute("themeTemplateURI", themeTemplateURI, PageContext.REQUEST_SCOPE);
+	
+	String colorPalette = (String)aggMDContent.get("colorPalette");
+	pageContext.setAttribute("colorPalette", colorPalette, PageContext.REQUEST_SCOPE);
+	pageContext.setAttribute("pageStyle", (String)aggMDContent.get("pageStyle"), PageContext.REQUEST_SCOPE);
+	
+	//colorPaletteUrl
+	if(colorPalette != null) {
+		pageContext.setAttribute("colorPaletteUrl", createURL(urlFct, new URI(themeWebDAVBaseURI + colorPalette), null, isProtected), PageContext.REQUEST_SCOPE);
+	}
+	
+	LocalizedContext localizedContext = localizedContextHome.getLocalizedContext((HttpServletRequest) pageContext.getRequest());
+	
+	pageContext.setAttribute("preferredLocale", localizedContext.getPreferredSupportedLocale(), PageContext.REQUEST_SCOPE);
+	
+	pocSvc.dispose();
+}
+
+%><c:set var="currentThemeID" scope="request" value="${wp.identification[wp.themeList.current]}" /><%--
+--%><c:set var="currentNavNode" scope="request" value="${wp.selectionModel.selected}" /><%--
+--%><c:set var="pageTitle" scope="request" value="${wp.title}" /><%--
+--%><c:set var="cpConfig" scope="request" value="${wp.cp.config}" /><%--
+--%><c:set var="ccConfig" scope="application" value="${wp.rep['WP CommonComponentConfigService']}" /><%--
+--%><c:set var="themeConfig" scope="request" value="${wp.themeConfig}" /><%--
+--%><c:set var="aggMDContent" value="${wp.metadata[currentNavNode.contentNode]}" scope="request"/><%--
+--%><c:set var="aggMD" value="${wp.metadata[wp.selectionModel.selected]}" scope="request"/><%--
+--%><c:set var="dirMD" value="${wp.selectionModel.selected.metadata}" scope="request"/><%--
+--%><c:set var="selectionPath" scope="request" value="${wp.selectionModel.selectionPath}" /><%--
+--%><c:set var="deviceClass" scope="request" value="${wp.clientProfile['DeviceClass']}" /><%--
+--%><c:set var="isMobile" scope="request" value="${deviceClass == 'tablet' || deviceClass == 'smartphone'}" /><%--
+--%><%
+Boolean isAuthenticated = Boolean.FALSE;
+%>
+<portal-logic:if loggedIn="yes"><%
+isAuthenticated = Boolean.TRUE;
+%></portal-logic:if>
+<%
+pageContext.setAttribute("isAuthenticated", isAuthenticated, PageContext.REQUEST_SCOPE);
+
+initRequest(pageContext); 
+%>

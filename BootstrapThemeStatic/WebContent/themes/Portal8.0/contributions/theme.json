@@ -1,0 +1,172 @@
+{
+	"modules":[{
+	"id":"wp_theme_portal_80",
+		"prereqs":[{
+			"id":"wp_client_main"
+		},{
+			"id":"wp_client_ext"
+		}],
+		"contributions":[{
+			"type":"head",
+			"sub-contributions":[{
+				"type":"js",
+				"uris":[{
+					"value":"/js/head.js"
+				}]
+			}, {
+				"type":"css",
+				"uris":[{
+				"value":"/css/master.css"
+				}, {
+					"value":"/css/master.css.uncompressed.css",
+					"type":"debug"
+				}, {
+					"value":"/css/masterRTL.css",
+					"type":"rtl"
+				}, {
+					"value":"/css/masterRTL.css.uncompressed.css",
+					"type":"rtl,debug"
+				}, {
+					"value":"/css/master_smartphone.css",
+					"deviceClass":"smartphone"
+				}, {
+					"value":"/css/master_smartphone.css.uncompressed.css",
+					"deviceClass":"smartphone",
+					"type":"debug"
+				}, {
+					"value":"/css/master_smartphoneRTL.css",
+					"deviceClass":"smartphone",
+					"type":"rtl"
+				}, {
+					"value":"/css/master_smartphoneRTL.css.uncompressed.css",
+					"deviceClass":"smartphone",
+					"type":"rtl,debug"
+				}, {
+					"value":"/css/master_tablet.css",
+					"deviceClass":"tablet"
+				}, {
+					"value":"/css/master_tablet.css.uncompressed.css",
+					"deviceClass":"tablet",
+					"type":"debug"
+				}, {
+					"value":"/css/master_tabletRTL.css",
+					"deviceClass":"tablet",
+					"type":"rtl"
+				}, {
+					"value":"/css/master_tablet.css.uncompressed.css",
+					"deviceClass":"tablet",
+					"type":"rtl,debug"
+				}]
+			}]
+		}]
+	}, {
+		"id":"wp_theme_edit",
+		"prereqs":[{
+			"id":"wp_client_main"
+		}],
+		"contributions":[{
+			"type":"config",
+			"sub-contributions":[{
+				"type":"js",
+				"uris":[{
+					"value":"/js/theme.js"
+				}, {
+					"value":"/js/theme.js.uncompressed.js",
+					"type":"debug"
+				}]
+			}]
+		}]
+	}, {
+		"id":"wp_theme_menus",
+		"prereqs":[{
+			"id":"wp_client_main"
+		}, {
+			"id":"wp_portal"
+		}],
+		"contributions":[{
+			"type":"config",
+			"sub-contributions":[{
+				"type":"js",
+				"uris":[{
+					"value":"/js/contextmenu.js"
+				}, {
+					"value":"/js/contextmenu.js.uncompressed.js",
+					"type":"debug"
+				}]
+			},{
+				"type":"js",
+				"uris":[{ "value":"/js/nls/contextmenu.js"},
+						{ "value":"/js/nls/contextmenu_ar.js", "lang":"ar"},
+						{ "value":"/js/nls/contextmenu_ca.js", "lang":"ca"},
+						{ "value":"/js/nls/contextmenu_cs.js", "lang":"cs"},
+						{ "value":"/js/nls/contextmenu_da.js", "lang":"da"},
+						{ "value":"/js/nls/contextmenu_de.js", "lang":"de"},
+						{ "value":"/js/nls/contextmenu_el.js", "lang":"el"},
+						{ "value":"/js/nls/contextmenu_en.js", "lang":"en"},
+						{ "value":"/js/nls/contextmenu_es.js", "lang":"es"},
+						{ "value":"/js/nls/contextmenu_fi.js", "lang":"fi"},
+						{ "value":"/js/nls/contextmenu_fr.js", "lang":"fr"},
+						{ "value":"/js/nls/contextmenu_he.js", "lang":"he"},
+						{ "value":"/js/nls/contextmenu_hr.js", "lang":"hr"},
+						{ "value":"/js/nls/contextmenu_hu.js", "lang":"hu"},
+						{ "value":"/js/nls/contextmenu_it.js", "lang":"it"},
+						{ "value":"/js/nls/contextmenu_ja.js", "lang":"ja"},
+						{ "value":"/js/nls/contextmenu_kk.js", "lang":"kk"},
+						{ "value":"/js/nls/contextmenu_ko.js", "lang":"ko"},
+						{ "value":"/js/nls/contextmenu_nl.js", "lang":"nl"},
+						{ "value":"/js/nls/contextmenu_no.js", "lang":"no"},
+						{ "value":"/js/nls/contextmenu_pl.js", "lang":"pl"},
+						{ "value":"/js/nls/contextmenu_pt_BR.js", "lang":"pt_BR"},
+						{ "value":"/js/nls/contextmenu_pt.js", "lang":"pt"},
+						{ "value":"/js/nls/contextmenu_ro.js", "lang":"ro"},
+						{ "value":"/js/nls/contextmenu_ru.js", "lang":"ru"},
+						{ "value":"/js/nls/contextmenu_sk.js", "lang":"sk"},
+						{ "value":"/js/nls/contextmenu_sl.js", "lang":"sl"},
+						{ "value":"/js/nls/contextmenu_sv.js", "lang":"sv"},
+						{ "value":"/js/nls/contextmenu_th.js", "lang":"th"},
+						{ "value":"/js/nls/contextmenu_tr.js", "lang":"tr"},
+						{ "value":"/js/nls/contextmenu_uk.js", "lang":"uk"},
+						{ "value":"/js/nls/contextmenu_zh_TW.js", "lang":"zh_TW"},
+						{ "value":"/js/nls/contextmenu_zh.js", "lang":"zh"}]
+			}]
+		}]
+	},
+	{
+		"id":"wp_theme_skin_region",
+		"prereqs":[{
+			"id":"wp_client_main"
+		}],
+		"contributions":[{
+			"type":"config",
+			"sub-contributions":[{
+				"type":"js",
+				"uris":[{
+					"value":"/js/skinRegion.js"
+				},
+				{
+					"value":"/js/skinRegion.js.uncompressed.js",
+					"type":"debug"
+				}]
+			}]
+		}]
+	},
+	{
+		"id":"wp_theme_high_contrast",
+		"prereqs":[{
+			"id":"wp_client_main"
+		}],
+		"contributions":[{
+			"type":"config",
+			"sub-contributions":[{
+				"type":"js",
+				"uris":[{
+					"value":"/js/highContrast.js"
+				},
+				{
+					"value":"/js/highContrast.js.uncompressed.js",
+					"type":"debug"
+				}]
+			}]
+		}]
+	}]
+}

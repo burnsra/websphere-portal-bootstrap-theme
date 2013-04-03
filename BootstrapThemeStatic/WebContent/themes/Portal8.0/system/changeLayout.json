@@ -1,0 +1,12 @@
+{
+localizationPackageName:"com.ibm.bundles", localizationBundleName:"Shelf",
+categories:[
+{
+"label":"add_content_all",
+"searchStr":"shelf_searchAll",
+"datastore":"com.ibm.data.JsonStore",
+"url":ibmCfg.themeConfig.themeRootURI+"/system/layouts.json",
+"contributions":ibmCfg.themeConfig.layoutSources
+}
+]
+}

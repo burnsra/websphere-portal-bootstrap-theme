@@ -1,0 +1,48 @@
+﻿<a rel="dynamic-content" href="portlet.link:portlet"></a>
+<section class="ibmPortalControl wpthemeControl wpthemeStandard a11yRegionTarget" role="region" >
+	
+	
+	<a rel="dynamic-content" href="dyn-cs:id:80theme_asaPortlet"></a>
+	
+	<!-- start header markup -->
+	<header class="wpthemeControlHeader dojoDndHandle">
+		<div class="wpthemeInner">
+			<h2>
+				<!-- lm-dynamic-title node marks location for dynamic title support -->
+				<span class="lm-dynamic-title asa.portlet.title a11yRegionLabel"><a rel="dynamic-content" href="lm:title"></a></span>
+			</h2>
+			<a aria-haspopup="true" aria-label="แสดงผลเมนู" href="javascript:;" class="wpthemeIcon wpthemeActionDisabled wpthemeMenuFocus" tabindex="0"
+				onclick="javascript:if (typeof wptheme != 'undefined') wptheme.contextMenu.init(this, 'skinAction', {'navID':ibmCfg.portalConfig.currentPageOID,'windowID':wptheme.getWindowIDFromSkin(this)});"
+				onmousemove="javascript:if (typeof i$ != 'undefined' && typeof wptheme != 'undefined') { i$.removeClass(this,'wpthemeActionDisabled'); this.onmousemove = null; }">
+				<span title="แสดงผลเมนู"><img aria-label="แสดงผลเมนู" alt="" src="/wps/themeModules/themes/html/dynamicSpots/icons/blank.gif"></span>
+				<span class="wpthemeAltText">แอ็คชัน</span>
+				<span class="wpthemeMenuRight">
+					<div class="wpthemeMenuBorder">
+						<div class="wpthemeMenuNotchBorder"></div>
+						<!-- define the menu item template inside the "ul" element.  only "css-class", "description", and "title" are handled by the theme's sample javascript. -->
+						<ul class="wpthemeMenuDropDown wpthemeTemplateMenu" role="menu">
+							<li class="${css-class}" role="menuitem" tabindex="-1"><span class="wpthemeMenuText">${title}</span></li>
+						</ul>
+					</div>
+					<!-- Template for loading -->
+					<div class="wpthemeMenuLoading wpthemeTemplateLoading">กำลังโหลด...</div>
+					<!-- Template for submenu -->
+					<div class="wpthemeAnchorSubmenu wpthemeTemplateSubmenu">
+						<div class="wpthemeMenuBorder wpthemeMenuSubmenu">
+							<ul id="${submenu-id}" class="wpthemeMenuDropDown" role="menu"><li role="menuitem" tabindex="-1"></li></ul>
+						</div>
+					</div>
+				</span>
+			</a>
+		</div>
+	</header>
+	
+	<div class="wpthemeControlBody wpthemeOverflowAuto wpthemeClear"> <!-- lm:control dynamic spot injects markup of layout control -->
+	<!-- asa.overlay marks the node that the AsaOverlayWidget will be placed in -->
+		<div style="position:relative; z-index: 1;">
+			<div class="analytics.overlay"></div>
+		</div>
+		<a rel="dynamic-content" href="lm:control"></a> 
+		<div class="wpthemeClear"></div>
+	</div>
+</section> 

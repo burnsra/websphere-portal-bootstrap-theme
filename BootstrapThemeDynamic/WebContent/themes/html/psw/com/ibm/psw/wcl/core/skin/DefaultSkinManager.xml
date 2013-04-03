@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!--
+/*********************************************************** {COPYRIGHT-TOP} ***
+* Licensed materials - Property of IBM
+* Tivoli Presentation Services 
+* 
+* (C) Copyright IBM Corp. 2002,2003
+* 
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with 
+* IBM Corp.
+************************************************************ {COPYRIGHT-END} **/
+-->
+
+<skins>
+
+  <skin name="BaseSkin">
+    <preview>
+      <displayname keyName="TEXT_BASE_SKIN_NAME" resourceBundle="com.ibm.psw.wcl.nls.WclSkinChooserResources" />
+      <thumbnail width="320" height="250" dir="LTR">
+        <resource keyName="IMG_SKIN_PREVIEW" resourceBundle="com.ibm.psw.wcl.nls.BaseSkinResources" />
+      </thumbnail>
+      <thumbnail width="320" height="250" dir="RTL">
+        <resource keyName="IMG_SKIN_PREVIEW_RTL" resourceBundle="com.ibm.psw.wcl.nls.BaseSkinResources" />
+      </thumbnail>
+    </preview>
+
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseComponentStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.WComponent" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseContainerStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.WContainer" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BasePageStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.WPage" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseHyperlinkStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.markup.WHyperlink" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseTextComponentStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.markup.WTextComponent" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseSimpleLayoutStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.layout.AWSimpleLayout" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseCellStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.cell.AWCell" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseTitledLayoutStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.layout.WTitledLayout" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseFDALayoutStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.layout.WFDALayout" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseTreeStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.tree.WTree" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseTextEntryStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WTextEntry" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseTextAreaStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WTextArea" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseButtonStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WButton" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseComboBoxStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WComboBox" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseSelectionBoxStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WSelectionBox" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseCheckBoxStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WCheckBox" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseRadioButtonGroupStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WRadioButtonGroup" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseTableStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.table.WTable" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseTableColumnStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.table.WTableColumn" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BasePopupMenuStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.menu.WPopupMenu" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseFormStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WForm" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseNotebookStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.notebook.WNotebook" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseMessageBoxStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.message.WMessageBox" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseDualListStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.duallist.WDualList" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseImageButtonStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WImageButton" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseWizardStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.wizard.WWizard" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseToolbarLayoutStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.toolbar.WToolbarLayout" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseLabelComponentStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WLabelComponent" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseDateChooserStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WDateChooser" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseMarqueeStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.marquee.WMarquee" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseBubbleHelpStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.bubblehelp.WBubbleHelp" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.base.BaseTimeChooserStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WTimeChooser" />
+
+  </skin>
+
+  <skin name="TungstenSkin">
+    <preview>
+      <displayname keyName="TEXT_TUNGSTEN_SKIN_NAME" resourceBundle="com.ibm.psw.wcl.nls.WclSkinChooserResources" />
+      <thumbnail width="320" height="250" dir="LTR">
+        <resource keyName="IMG_SKIN_PREVIEW" resourceBundle="com.ibm.psw.wcl.nls.TungstenSkinResources" />
+      </thumbnail>
+      <thumbnail width="320" height="250" dir="RTL">
+        <resource keyName="IMG_SKIN_PREVIEW_RTL" resourceBundle="com.ibm.psw.wcl.nls.TungstenSkinResources" />
+      </thumbnail>
+    </preview>
+
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenComponentStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.WComponent" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenContainerStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.WContainer" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenPageStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.WPage" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenHyperlinkStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.markup.WHyperlink" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenTextComponentStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.markup.WTextComponent" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenSimpleLayoutStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.layout.AWSimpleLayout" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenCellStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.cell.AWCell" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenTitledLayoutStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.layout.WTitledLayout" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenFDALayoutStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.layout.WFDALayout" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenTreeStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.tree.WTree" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenTextEntryStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WTextEntry" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenTextAreaStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WTextArea" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenButtonStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WButton" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenComboBoxStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WComboBox" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenSelectionBoxStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WSelectionBox" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenCheckBoxStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WCheckBox" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenRadioButtonGroupStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WRadioButtonGroup" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenTableStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.table.WTable" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenTableColumnStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.table.WTableColumn" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenPopupMenuStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.menu.WPopupMenu" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenFormStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WForm" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenNotebookStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.notebook.WNotebook" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenMessageBoxStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.message.WMessageBox" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenDualListStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.duallist.WDualList" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenImageButtonStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WImageButton" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenWizardStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.wizard.WWizard" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenToolbarLayoutStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.toolbar.WToolbarLayout" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenLabelComponentStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WLabelComponent" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenDateChooserStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WDateChooser" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenMarqueeStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.marquee.WMarquee" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenBubbleHelpStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.bubblehelp.WBubbleHelp" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.tungsten.TungstenTimeChooserStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WTimeChooser" />
+
+  </skin>
+
+  <skin name="SageSkin">
+    <preview>
+      <displayname keyName="TEXT_SAGE_SKIN_NAME" resourceBundle="com.ibm.psw.wcl.nls.WclSkinChooserResources" />
+      <thumbnail width="320" height="250" dir="LTR">
+        <resource keyName="IMG_SKIN_PREVIEW" resourceBundle="com.ibm.psw.wcl.nls.SageSkinResources" />
+      </thumbnail>
+      <thumbnail width="320" height="250" dir="RTL">
+        <resource keyName="IMG_SKIN_PREVIEW_RTL" resourceBundle="com.ibm.psw.wcl.nls.SageSkinResources" />
+      </thumbnail>
+    </preview>
+
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageComponentStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.WComponent" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageContainerStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.WContainer" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SagePageStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.WPage" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageHyperlinkStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.markup.WHyperlink" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageTextComponentStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.markup.WTextComponent" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageSimpleLayoutStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.layout.AWSimpleLayout" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageCellStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.cell.AWCell" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageTitledLayoutStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.layout.WTitledLayout" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageFDALayoutStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.layout.WFDALayout" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageTreeStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.tree.WTree" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageTextEntryStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WTextEntry" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageTextAreaStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WTextArea" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageButtonStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WButton" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageComboBoxStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WComboBox" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageSelectionBoxStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WSelectionBox" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageCheckBoxStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WCheckBox" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageRadioButtonGroupStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WRadioButtonGroup" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageTableStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.table.WTable" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageTableColumnStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.table.WTableColumn" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SagePopupMenuStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.menu.WPopupMenu" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageFormStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WForm" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageNotebookStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.notebook.WNotebook" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageMessageBoxStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.message.WMessageBox" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageDualListStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.duallist.WDualList" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageImageButtonStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WImageButton" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageWizardStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.wizard.WWizard" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageToolbarLayoutStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.toolbar.WToolbarLayout" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageLabelComponentStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WLabelComponent" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageDateChooserStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WDateChooser" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageMarqueeStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.marquee.WMarquee" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageBubbleHelpStyleInfo"
+               componentClass="com.ibm.psw.wcl.components.bubblehelp.WBubbleHelp" />
+    <styleinfo styleClass="com.ibm.psw.wcl.skins.sage.SageTimeChooserStyleInfo"
+               componentClass="com.ibm.psw.wcl.core.form.WTimeChooser" />
+
+  </skin>
+
+</skins>
+

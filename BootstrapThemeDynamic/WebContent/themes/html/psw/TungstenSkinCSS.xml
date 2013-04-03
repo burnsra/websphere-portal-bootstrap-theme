@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!--
+/***********************************************************
+Licensed Materials-Property of IBM
+IBM Presentation Services (Web)
+(C)Copyright IBM Corp 2000,2003
+All rights reserved
+US Govt Users Restricted Rights-Use,duplication,or disclosure restricted by GSA ADP Schedule Contract w/IBM Corp
+***********************************************************/
+-->
+
+<!--
+/***********************************************************
+This XML file is automatically generated. The values are
+taken from the base skin style info objects defined in
+com/ibm/psw/wcl/skins/base. This file can be used as a
+starting point for CSS based skins.
+***********************************************************/
+-->
+
+<skins>
+  <cssskin name="TungstenSkinCSS" resourceLoader="CSRL" >
+    <preview>
+      <displayname keyName="TEXT_TUNGSTEN_SKIN_NAME" resourceBundle="com.ibm.psw.wcl.nls.WclSkinChooserResources" />
+      <thumbnail width="320" height="250" dir="LTR">
+        <resource keyName="IMG_SKIN_PREVIEW" resourceBundle="com.ibm.psw.wcl.nls.TungstenSkinResources" />
+      </thumbnail>
+      <thumbnail width="320" height="250" dir="RTL">
+        <resource keyName="IMG_SKIN_PREVIEW_RTL" resourceBundle="com.ibm.psw.wcl.nls.TungstenSkinResources" />
+      </thumbnail>
+    </preview>
+    <css>
+      <path value="TungstenSkinCSS.css" />
+    </css>
+    <image name="IMG_STATUS_ERROR" width="8" height="8">
+      <path value="wcl/images/tungsten/err1.gif" />
+    </image>
+    <image name="IMG_BLANK">
+      <path value="wcl/images/tungsten/o.gif" />
+    </image>
+    <image name="IMG_STATUS_REQUIRED" width="8" height="8">
+      <path value="wcl/images/tungsten/req1.gif" />
+    </image>
+    <image name="IMG_TIME_CHOOSER_BUTTON_OVER" width="22" height="22">
+      <path value="wcl/images/tungsten/tc2.gif" />
+    </image>
+    <image name="IMG_TIME_CHOOSER_BUTTON" width="22" height="22">
+      <path value="wcl/images/tungsten/tc1.gif" />
+    </image>
+    <image name="IMG_TIME_CHOOSER_BUTTON_DISABLED" width="22" height="22">
+      <path value="wcl/images/tungsten/tc3.gif" />
+    </image>
+    <image name="IMG_PORTFOLIO_CLOSE_BUTTON_LTR" width="16" height="16">
+      <path value="/wcc/images/tungsten/por12.gif" />
+    </image>
+    <image name="IMG_PORTFOLIO_OPEN_BUTTON_LTR" width="16" height="16">
+      <path value="/wcc/images/tungsten/por11.gif" />
+    </image>
+    <image name="IMG_PORTFOLIO_NODE_COLLAPSED_LEFT_TO_RIGHT" width="12" height="12">
+      <path value="/wcc/images/tungsten/por8.gif" />
+    </image>
+    <image name="IMG_PORTFOLIO_NODE_SPACER" width="12" height="2">
+      <path value="/wcc/images/por10.gif" />
+    </image>
+    <image name="IMG_PORTFOLIO_NODE_EXPANDED" width="12" height="12">
+      <path value="/wcc/images/tungsten/por7.gif" />
+    </image>
+    <image name="IMG_PORTFOLIO_NODE_COLLAPSED_RIGHT_TO_LEFT" width="12" height="12">
+      <path value="/wcc/images/tungsten/por9.gif" />
+    </image>
+    <image name="IMG_PORTFOLIO_LOCK_BUTTON">
+      <path value="/wcc/images/por13.gif" />
+    </image>
+    <image name="IMG_ITEM_SELECTED_LEFT">
+      <path value="/wcc/images/tungsten/tsk4.gif" />
+    </image>
+    <image name="IMG_ITEM_ICON">
+      <path value="/wcc/images/tungsten/tsk1.gif" />
+    </image>
+    <image name="IMG_ITEM_UNSELECTED_RIGHT">
+      <path value="/wcc/images/tungsten/tsk8.gif" />
+    </image>
+    <image name="IMG_ITEM_UNSELECTED_LEFT">
+      <path value="/wcc/images/tungsten/tsk7.gif" />
+    </image>
+    <image name="IMG_ITEM_SELECTED_RIGHT">
+      <path value="/wcc/images/tungsten/tsk5.gif" />
+    </image>
+    <image name="IMG_ALL_TASKS_SELECTED_BUTTON">
+      <path value="/wcc/images/tungsten/atb2.gif" />
+    </image>
+    <image name="IMG_ALL_TASKS_UNSELECTED_BUTTON">
+      <path value="/wcc/images/tungsten/atb1.gif" />
+    </image>
+    <image name="IMG_DUALLIST_DOWN" width="20" height="20">
+      <path value="wcl/images/tungsten/dl2.gif" />
+    </image>
+    <image name="IMG_DUALLIST_UP" width="20" height="20">
+      <path value="wcl/images/tungsten/dl1.gif" />
+    </image>
+    <image name="IMG_MESSAGE_WARNING" width="36" height="36">
+      <path value="wcl/images/tungsten/mb3.gif" />
+    </image>
+    <image name="IMG_MESSAGE_BG_RTL" width="8" height="8">
+      <path value="wcl/images/tungsten/mb5.gif" />
+    </image>
+    <image name="IMG_MESSAGE_BG" width="8" height="8">
+      <path value="wcl/images/tungsten/mb1.gif" />
+    </image>
+    <image name="IMG_MESSAGE_ERROR" width="36" height="36">
+      <path value="wcl/images/tungsten/mb2.gif" />
+    </image>
+    <image name="IMG_MESSAGE_INFORMATION_RTL" width="36" height="36">
+      <path value="wcl/images/tungsten/mb6.gif" />
+    </image>
+    <image name="IMG_MESSAGE_INFORMATION" width="36" height="36">
+      <path value="wcl/images/tungsten/mb4.gif" />
+    </image>
+    <image name="IMG_SUBTITLEBAR_FOREGROUND_LEFT">
+      <path value="/wcc/images/tungsten/tlt1.gif" />
+    </image>
+    <image name="IMG_TITLEBAR_BACKGROUND">
+      <path value="/wcc/images/tungsten/tlt3.gif" />
+    </image>
+    <image name="IMG_TITLEBAR_FOREGROUND_RIGHT">
+      <path value="/wcc/images/tungsten/tlt2.gif" />
+    </image>
+    <image name="IMG_SUBTITLEBAR_FOREGROUND_RIGHT">
+      <path value="/wcc/images/tungsten/tlt2.gif" />
+    </image>
+    <image name="IMG_TITLEBAR_FOREGROUND_LEFT">
+      <path value="/wcc/images/tungsten/tlt1.gif" />
+    </image>
+    <image name="IMG_TOOLBAR_SPACER">
+      <path value="wcl/images/tungsten/tbl13.gif" />
+    </image>
+    <image name="IMG_TOOLBAR_SEPARATOR" width="12">
+      <path value="wcl/images/tungsten/tbl37.gif" />
+    </image>
+    <image name="IMG_TOOLBAR_LEFT" width="12">
+      <path value="wcl/images/tungsten/tbl20.gif" />
+    </image>
+    <image name="IMG_TOOLBAR_BACKGROUND">
+      <path value="wcl/images/tungsten/tbl21.gif" />
+    </image>
+    <image name="IMG_TOOLBAR_RIGHT" width="12">
+      <path value="wcl/images/tungsten/tbl22.gif" />
+    </image>
+    <image name="IMG_DATE_CHOOSER_NEXT_MONTH" width="20" height="20">
+      <path value="wcl/images/tungsten/dc5.gif" />
+    </image>
+    <image name="IMG_DATE_CHOOSER_BUTTON" width="23" height="22">
+      <path value="wcl/images/tungsten/dc1.gif" />
+    </image>
+    <image name="IMG_DATE_CHOOSER_PREVIOUS_MONTH_OVER" width="20" height="20">
+      <path value="wcl/images/tungsten/dc8.gif" />
+    </image>
+    <image name="IMG_DATE_CHOOSER_PREVIOUS_MONTH" width="20" height="20">
+      <path value="wcl/images/tungsten/dc6.gif" />
+    </image>
+    <image name="IMG_DATE_CHOOSER_NEXT_MONTH_OVER" width="20" height="20">
+      <path value="wcl/images/tungsten/dc7.gif" />
+    </image>
+    <image name="IMG_DATE_CHOOSER_BUTTON_OVER" width="23" height="22">
+      <path value="wcl/images/tungsten/dc2.gif" />
+    </image>
+    <image name="IMG_DATE_CHOOSER_CLOSE" width="18" height="15">
+      <path value="wcl/images/tungsten/dc4.gif" />
+    </image>
+    <image name="IMG_DATE_CHOOSER_BUTTON_DISABLED" width="23" height="22">
+      <path value="wcl/images/tungsten/dc3.gif" />
+    </image>
+    <image name="IMG_TABLE_SELECT_ON" width="15" height="15">
+      <path value="wcl/images/tungsten/tbl5.gif" />
+    </image>
+    <image name="IMG_TABLE_SELECT_ALL" width="32" height="32">
+      <path value="wcl/images/tungsten/tbl9.gif" />
+    </image>
+    <image name="IMG_TABLE_BOOLEAN_TRUE_SELECTED" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl46.gif" />
+    </image>
+    <image name="IMG_TABLE_BOOLEAN_TRUE" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl8.gif" />
+    </image>
+    <image name="IMG_TABLE_PREVIOUS" width="24" height="24">
+      <path value="wcl/images/tungsten/tbl1.gif" />
+    </image>
+    <image name="IMG_TABLE_HIDE_ACTIONBAR" width="32" height="32">
+      <path value="wcl/images/tungsten/tbl39.gif" />
+    </image>
+    <image name="IMG_TABLE_ACTIONBAR_LEFT_BTM" width="6" height="6">
+      <path value="wcl/images/tungsten/tbl13.gif" />
+    </image>
+    <image name="IMG_TABLE_APPLY_FILTER" width="14" height="14">
+      <path value="wcl/images/tungsten/tbl14.gif" />
+    </image>
+    <image name="IMG_TABLE_SHOW_ACTIONBAR" width="32" height="32">
+      <path value="wcl/images/tungsten/tbl38.gif" />
+    </image>
+    <image name="IMG_TABLE_BOOLEAN_FALSE" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl7.gif" />
+    </image>
+    <image name="IMG_TABLE_HIDE_FILTER_ROW" width="32" height="32">
+      <path value="wcl/images/tungsten/tbl12.gif" />
+    </image>
+    <image name="IMG_TABLE_CLEAR_FILTERS" width="32" height="32">
+      <path value="wcl/images/tungsten/tbl17.gif" />
+    </image>
+    <image name="IMG_TABLE_NOT_SORTED" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl48.gif" />
+    </image>
+    <image name="IMG_TABLE_SELECT_OFF" width="15" height="15">
+      <path value="wcl/images/tungsten/tbl6.gif" />
+    </image>
+    <image name="IMG_TABLE_NEXT" width="24" height="24">
+      <path value="wcl/images/tungsten/tbl2.gif" />
+    </image>
+    <image name="IMG_TABLE_RADIO_OFF" width="15" height="15">
+      <path value="wcl/images/tungsten/tbl4.gif" />
+    </image>
+    <image name="IMG_TABLE_SPACER">
+      <path value="wcl/images/tungsten/tbl13.gif" />
+    </image>
+    <image name="IMG_TABLE_EDIT_SORT" width="32" height="32">
+      <path value="wcl/images/tungsten/tbl19.gif" />
+    </image>
+    <image name="IMG_TABLE_UNAPPLY_FILTER" width="14" height="14">
+      <path value="wcl/images/tungsten/tbl15.gif" />
+    </image>
+    <image name="IMG_TABLE_SORT_ASCENDING_5" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl28.gif" />
+    </image>
+    <image name="IMG_TABLE_SORT_ASCENDING_4" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl27.gif" />
+    </image>
+    <image name="IMG_TABLE_ACTIONBAR_LEFT_MID" width="6" height="28">
+      <path value="wcl/images/tungsten/tbl13.gif" />
+    </image>
+    <image name="IMG_TABLE_DIVIDER" width="15" height="22">
+      <path value="wcl/images/tungsten/tbl37.gif" />
+    </image>
+    <image name="IMG_TABLE_SORT_ASCENDING_3" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl26.gif" />
+    </image>
+    <image name="IMG_TABLE_SORT_ASCENDING_2" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl25.gif" />
+    </image>
+    <image name="IMG_TABLE_SORT_ASCENDING_1" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl24.gif" />
+    </image>
+    <image name="IMG_TABLE_SORT_DESCENDING_5" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl34.gif" />
+    </image>
+    <image name="IMG_TABLE_SORT_ASCENDING_0" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl23.gif" />
+    </image>
+    <image name="IMG_TABLE_EXPAND" width="32" height="32">
+      <path value="wcl/images/tungsten/tbl36.gif" />
+    </image>
+    <image name="IMG_TABLE_SORT_DESCENDING_4" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl33.gif" />
+    </image>
+    <image name="IMG_TABLE_SORT_DESCENDING_3" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl32.gif" />
+    </image>
+    <image name="IMG_TABLE_SORT_DESCENDING_2" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl31.gif" />
+    </image>
+    <image name="IMG_TABLE_SORT_DESCENDING_1" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl30.gif" />
+    </image>
+    <image name="IMG_TABLE_SORT_DESCENDING_0" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl29.gif" />
+    </image>
+    <image name="IMG_TABLE_ACTIONBAR_BOTTOM">
+      <path value="wcl/images/tungsten/tbl13.gif" />
+    </image>
+    <image name="IMG_TABLE_ACTIONBAR_LEFT_TOP" width="6" height="6">
+      <path value="wcl/images/tungsten/tbl13.gif" />
+    </image>
+    <image name="IMG_TABLE_ACTIONBAR_TOP">
+      <path value="wcl/images/tungsten/tbl13.gif" />
+    </image>
+    <image name="IMG_TABLE_SHOW_FILTER_ROW" width="32" height="32">
+      <path value="wcl/images/tungsten/tbl11.gif" />
+    </image>
+    <image name="IMG_TABLE_RECYCLE_FILTER" width="14" height="14">
+      <path value="wcl/images/tungsten/tbl16.gif" />
+    </image>
+    <image name="IMG_TABLE_BOOLEAN_FALSE_SELECTED" width="16" height="16">
+      <path value="wcl/images/tungsten/tbl47.gif" />
+    </image>
+    <image name="IMG_TABLE_COLLAPSE" width="32" height="32">
+      <path value="wcl/images/tungsten/tbl35.gif" />
+    </image>
+    <image name="IMG_TABLE_DESELECT_ALL" width="32" height="32">
+      <path value="wcl/images/tungsten/tbl10.gif" />
+    </image>
+    <image name="IMG_TABLE_CLEAR_SORTS" width="32" height="32">
+      <path value="wcl/images/tungsten/tbl18.gif" />
+    </image>
+    <image name="IMG_TABLE_RADIO_ON" width="15" height="15">
+      <path value="wcl/images/tungsten/tbl3.gif" />
+    </image>
+    <image name="IMG_SIGN_OUT_BUTTON">
+      <path value="/cct/images/tungsten/sig1.gif" />
+    </image>
+    <image name="IMG_SIGN_OUT_BUTTON_RTL">
+      <path value="/cct/images/tungsten/sig2.gif" />
+    </image>
+    <image name="IMG_TREE_EXPANDED_JOINT_RTL" width="20" height="20">
+      <path value="wcl/images/tungsten/tre15.gif" />
+    </image>
+    <image name="IMG_TREE_COLLAPSE_ALL" width="32" height="32">
+      <path value="wcl/images/tungsten/tre22.gif" />
+    </image>
+    <image name="IMG_TREE_EXPANDED_JOINT" width="20" height="20">
+      <path value="wcl/images/tungsten/tre4.gif" />
+    </image>
+    <image name="IMG_TREE_UNSELECTED_NODE_RTL" width="16" height="16">
+      <path value="wcl/images/tungsten/tre13.gif" />
+    </image>
+    <image name="IMG_TREE_COLLAPSED_JOINT_RTL" width="20" height="20">
+      <path value="wcl/images/tungsten/tre14.gif" />
+    </image>
+    <image name="IMG_TREE_EXPAND_ALL" width="32" height="32">
+      <path value="wcl/images/tungsten/tre23.gif" />
+    </image>
+    <image name="IMG_TREE_UNSELECTED_NODE" width="16" height="16">
+      <path value="wcl/images/tungsten/tre2.gif" />
+    </image>
+    <image name="IMG_TREE_FILLER_SPACER" width="20" height="2">
+      <path value="wcl/images/tungsten/tre11.gif" />
+    </image>
+    <image name="IMG_TREE_COLLAPSED_JOINT" width="20" height="20">
+      <path value="wcl/images/tungsten/tre3.gif" />
+    </image>
+    <image name="IMG_TREE_SELECTED_NODE_RTL" width="16" height="16">
+      <path value="wcl/images/tungsten/tre12.gif" />
+    </image>
+    <image name="IMG_TREE_SELECTED_NODE" width="16" height="16">
+      <path value="wcl/images/tungsten/tre1.gif" />
+    </image>
+    <image name="IMG_FDA_DEFAULT_BIDI" width="65" height="65">
+      <path value="wcl/images/tungsten/fda4.gif" />
+    </image>
+    <image name="IMG_FDA_DEFAULT" width="65" height="65">
+      <path value="wcl/images/tungsten/fda1.gif" />
+    </image>
+    <image name="IMG_BUBBLE_HELP_POINTER_BOTTOM_LEFT" width="20" height="28">
+      <path value="wcl/images/tungsten/bh9.gif" />
+    </image>
+    <image name="IMG_BUBBLE_HELP_TOP_LEFT" width="15" height="29">
+      <path value="wcl/images/tungsten/bh2.gif" />
+    </image>
+    <image name="IMG_BUBBLE_HELP_RIGHT" width="15" height="5">
+      <path value="wcl/images/tungsten/bh5.gif" />
+    </image>
+    <image name="IMG_BUBBLE_HELP_LEFT" width="15" height="5">
+      <path value="wcl/images/tungsten/bh4.gif" />
+    </image>
+    <image name="IMG_BUBBLE_HELP_POINTER_BOTTOM_RIGHT" width="20" height="28">
+      <path value="wcl/images/tungsten/bh10.gif" />
+    </image>
+    <image name="IMG_BUBBLE_HELP_BOTTOM_BACKGROUND" width="5" height="28">
+      <path value="wcl/images/tungsten/bh6.gif" />
+    </image>
+    <image name="IMG_BUBBLE_HELP_POINTER_TOP_LEFT" width="20" height="29">
+      <path value="wcl/images/tungsten/bh11.gif" />
+    </image>
+    <image name="IMG_BUBBLE_HELP_POINTER_TOP_RIGHT" width="20" height="29">
+      <path value="wcl/images/tungsten/bh12.gif" />
+    </image>
+    <image name="IMG_BUBBLE_HELP_TOP_RIGHT" width="15" height="29">
+      <path value="wcl/images/tungsten/bh3.gif" />
+    </image>
+    <image name="IMG_BUBBLE_HELP_BOTTOM_LEFT" width="15" height="28">
+      <path value="wcl/images/tungsten/bh7.gif" />
+    </image>
+    <image name="IMG_BUBBLE_HELP_BOTTOM_RIGHT" width="15" height="28">
+      <path value="wcl/images/tungsten/bh8.gif" />
+    </image>
+    <image name="IMG_BUBBLE_HELP_TOP_BACKGROUND" width="5" height="29">
+      <path value="wcl/images/tungsten/bh1.gif" />
+    </image>
+    <image name="IMG_CANVAS_TA_BUTTON">
+      <path value="/wcc/images/tungsten/tlt5.gif" />
+    </image>
+    <image name="IMG_CANVAS_FDA_BUTTON">
+      <path value="/wcc/images/tungsten/tlt6.gif" />
+    </image>
+    <image name="IMG_CANVAS_CLOSE_BUTTON">
+      <path value="/wcc/images/tungsten/tlt4.gif" />
+    </image>
+    <image name="IMG_POPUP_MENU_LAUNCHER_RTL" width="13" height="12">
+      <path value="wcl/images/tungsten/pop6.gif" />
+    </image>
+    <image name="IMG_POPUP_MENU_CASCADE_SELECTED_RTL" width="12" height="12">
+      <path value="wcl/images/tungsten/pop9.gif" />
+    </image>
+    <image name="IMG_POPUP_MENU_LAUNCHER_SELECTED" width="13" height="12">
+      <path value="wcl/images/tungsten/pop2.gif" />
+    </image>
+    <image name="IMG_POPUP_MENU_CASCADE_RTL" width="12" height="12">
+      <path value="wcl/images/tungsten/pop8.gif" />
+    </image>
+    <image name="IMG_POPUP_MENU_LAUNCHER_SELECTED_RTL" width="13" height="12">
+      <path value="wcl/images/tungsten/pop7.gif" />
+    </image>
+    <image name="IMG_POPUP_MENU_CASCADE_SELECTED" width="12" height="12">
+      <path value="wcl/images/tungsten/pop4.gif" />
+    </image>
+    <image name="IMG_POPUP_MENU_CASCADE_DISABLED" width="12" height="12">
+      <path value="wcl/images/tungsten/pop5.gif" />
+    </image>
+    <image name="IMG_POPUP_MENU_LAUNCHER" width="13" height="12">
+      <path value="wcl/images/tungsten/pop1.gif" />
+    </image>
+    <image name="IMG_POPUP_MENU_CASCADE" width="12" height="12">
+      <path value="wcl/images/tungsten/pop3.gif" />
+    </image>
+    <image name="IMG_POPUP_MENU_CASCADE_DISABLED_RTL" width="12" height="12">
+      <path value="wcl/images/tungsten/pop10.gif" />
+    </image>
+    <image name="IMG_MARQUEE_NORTHWEST_CORNER_RTL" width="16" height="28">
+      <path value="wcl/images/tungsten/mq2.gif" />
+    </image>
+    <image name="IMG_MARQUEE_NORTHWEST_CORNER" width="16" height="28">
+      <path value="wcl/images/tungsten/mq1.gif" />
+    </image>
+    <image name="IMG_WIZARD_STEP_CURRENT" width="16" height="16">
+      <path value="wcl/images/tungsten/wiz1.gif" />
+    </image>
+    <image name="IMG_WIZARD_STEP_CURRENT_RTL" width="16" height="16">
+      <path value="wcl/images/tungsten/wiz2.gif" />
+    </image>
+    <image name="IMG_WIZARD_STEP_COMPLETE" width="16" height="16">
+      <path value="wcl/images/tungsten/wiz3.gif" />
+    </image>
+    <image name="IMG_WIZARD_BACKGROUND">
+      <path value="wcl/images/tungsten/wiz4.gif" />
+    </image>
+  </cssskin>
+</skins>

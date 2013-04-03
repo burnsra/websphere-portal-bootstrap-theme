@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!--
+/*********************************************************** {COPYRIGHT-TOP} ***
+* Licensed materials - Property of IBM
+* Tivoli Presentation Services 
+* 
+* (C) Copyright IBM Corp. 2002,2003
+* 
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with 
+* IBM Corp.
+************************************************************ {COPYRIGHT-END} **/
+-->
+
+<skins>
+  <skin name="BaseSkin">
+    <styleinfo styleClass="com.ibm.psw.ua.web.skins.base.BaseUaPageStyleInfo"
+               componentClass="com.ibm.psw.ua.web.UaHelpView" />
+  </skin>
+  <skin name="TungstenSkin">
+    <styleinfo styleClass="com.ibm.psw.ua.web.skins.tungsten.TungstenUaPageStyleInfo"
+               componentClass="com.ibm.psw.ua.web.UaHelpView" />
+  </skin>
+  <skin name="SageSkin">
+    <styleinfo styleClass="com.ibm.psw.ua.web.skins.sage.SageUaPageStyleInfo"
+               componentClass="com.ibm.psw.ua.web.UaHelpView" />
+  </skin>
+</skins>

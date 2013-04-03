@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!--
+/*********************************************************** {COPYRIGHT-TOP} ***
+* Licensed materials - Property of IBM
+* Tivoli Presentation Services 
+* 
+* (C) Copyright IBM Corp. 2002,2003
+* 
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with 
+* IBM Corp.
+************************************************************ {COPYRIGHT-END} **/
+-->
+
+<renderers>
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.core.html.HTMLComponentRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.WComponent"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.core.html.HTMLComponentRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.WComponent"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.core.html.HTMLContainerRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.WContainer"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.core.html.HTMLContainerRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.WContainer"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.core.html.HTMLPageRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.WPage"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.core.html.HTMLPageRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.WPage"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.markup.html.HTMLHyperlinkRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.markup.WHyperlink"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.markup.html.HTMLHyperlinkRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.markup.WHyperlink"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.markup.html.HTMLImageRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.markup.WImage"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.markup.html.HTMLImageRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.markup.WImage"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.frame.html.HTMLFrameRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.frame.WFrame"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.frame.html.HTMLFrameRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.frame.WFrame"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.frame.html.HTMLWindowRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.frame.WWindow"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.frame.html.HTMLWindowRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.frame.WWindow"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.frame.html.HTMLInternalFrameRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.frame.WInternalFrame"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.frame.html.HTMLInternalFrameRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.frame.WInternalFrame"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLFramesetLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.layout.WFramesetLayout"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLFramesetLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.layout.WFramesetLayout"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLBorderLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.layout.WBorderLayout"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLBorderLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.layout.WBorderLayout"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLBoxLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.layout.WBoxLayout"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLBoxLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.layout.WBoxLayout"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLGridLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.layout.WGridLayout"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLGridLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.layout.WGridLayout"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLTitledLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.layout.WTitledLayout"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLTitledLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.layout.WTitledLayout"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLFDALayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.layout.WFDALayout"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLFDALayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.layout.WFDALayout"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.markup.html.HTMLContentMarkupRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.markup.WContentMarkup"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.markup.html.HTMLContentMarkupRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.markup.WContentMarkup"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.markup.html.HTMLHeadMarkupRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.markup.WHeadMarkup"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.markup.html.HTMLHeadMarkupRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.markup.WHeadMarkup"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.markup.html.HTMLTextComponentRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.markup.WTextComponent"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.markup.html.HTMLTextComponentRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.markup.WTextComponent"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.table.html.HTMLTableRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.table.WTable"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.table.html.HTMLTableRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.table.WTable"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLFormRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WForm"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLFormRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WForm"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLButtonRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WButton"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLButtonRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WButton"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLTextEntryRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WTextEntry"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLTextEntryRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WTextEntry"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.tree.html.HTMLTreeRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.tree.WTree"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.tree.html.HTMLTreeRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.tree.WTree"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLCheckBoxRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WCheckBox"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLCheckBoxRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WCheckBox"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLComboBoxRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WComboBox"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLComboBoxRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WComboBox"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLRadioButtonGroupRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WRadioButtonGroup"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLRadioButtonGroupRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WRadioButtonGroup"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLSelectionBoxRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WSelectionBox"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLSelectionBoxRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WSelectionBox"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLTextAreaRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WTextArea"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLTextAreaRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WTextArea"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.skin.html.HTMLSkinRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.skin.Skin"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.skin.html.HTMLSkinRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.skin.Skin"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.skin.html.HTMLSkinRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.skin.CssSkin"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.skin.html.HTMLSkinRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.skin.CssSkin"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLFormRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WEmbeddedForm"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLFormRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WEmbeddedForm"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLImageButtonRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WImageButton"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLImageButtonRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WImageButton"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.menu.html.HTMLPopupMenuRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.menu.WPopupMenu"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.menu.html.HTMLPopupMenuRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.menu.WPopupMenu"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.notebook.html.HTMLNotebookRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.notebook.WNotebook"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.notebook.html.HTMLNotebookRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.notebook.WNotebook"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.notebook.html.HTMLNotebookComponentRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.notebook.WNotebookComponent"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.notebook.html.HTMLNotebookComponentRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.notebook.WNotebookComponent"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.message.html.HTMLMessageBoxRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.message.WMessageBox"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.message.html.HTMLMessageBoxRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.message.WMessageBox"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.duallist.html.HTMLDualListRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.duallist.WDualList"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.duallist.html.HTMLDualListRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.duallist.WDualList"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.wizard.html.HTMLWizardRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.wizard.WWizard"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.wizard.html.HTMLWizardRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.wizard.WWizard"
+                 markupLanguage="xhtml" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.wizard.html.HTMLWizardComponentRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.wizard.WWizardComponent"
+                 markupLanguage="html" />
+
+  <renderer-info rendererClass="com.ibm.psw.wcl.renderers.wizard.html.HTMLWizardComponentRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.wizard.WWizardComponent"
+                 markupLanguage="xhtml" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.tags.html.HTMLJspPageRenderer"
+                 lookupClass="com.ibm.psw.wcl.tags.core.WJspPage"
+                 markupLanguage="html" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.tags.html.HTMLJspPageRenderer"
+                 lookupClass="com.ibm.psw.wcl.tags.core.WJspPage"
+                 markupLanguage="xhtml" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.toolbar.html.HTMLToolbarLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.toolbar.WToolbarLayout"
+                 markupLanguage="html" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.toolbar.html.HTMLToolbarLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.toolbar.WToolbarLayout"
+                 markupLanguage="xhtml" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLBoxLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.toolbar.WToolbar"
+                 markupLanguage="html" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.layout.html.HTMLBoxLayoutRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.toolbar.WToolbar"
+                 markupLanguage="xhtml" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.table.html.HTMLTableRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.table.WTableComponent"
+                 markupLanguage="html" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.table.html.HTMLTableRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.table.WTableComponent"
+                 markupLanguage="xhtml" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLLabelComponentRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WLabelComponent"
+                 markupLanguage="html" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLLabelComponentRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WLabelComponent"
+                 markupLanguage="xhtml" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLDateChooserRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WDateChooser"
+                 markupLanguage="html" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLDateChooserRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WDateChooser"
+                 markupLanguage="xhtml" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.marquee.html.HTMLMarqueeRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.marquee.WMarquee"
+                 markupLanguage="xhtml" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.marquee.html.HTMLMarqueeRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.marquee.WMarquee"
+                 markupLanguage="html" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.bubblehelp.html.HTMLBubbleHelpRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.bubblehelp.WBubbleHelp"
+                 markupLanguage="html" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.bubblehelp.html.HTMLBubbleHelpRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.bubblehelp.WBubbleHelp"
+                 markupLanguage="xhtml" />
+
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLTimeChooserRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WTimeChooser"
+                 markupLanguage="html" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.form.html.HTMLTimeChooserRenderer"
+                 lookupClass="com.ibm.psw.wcl.core.form.WTimeChooser"
+                 markupLanguage="xhtml" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.skin.html.HTMLSkinChooserRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.skin.WSkinChooser"
+                 markupLanguage="html" />
+
+<renderer-info rendererClass="com.ibm.psw.wcl.renderers.skin.html.HTMLSkinChooserRenderer"
+                 lookupClass="com.ibm.psw.wcl.components.skin.WSkinChooser"
+                 markupLanguage="xhtml" />
+</renderers>

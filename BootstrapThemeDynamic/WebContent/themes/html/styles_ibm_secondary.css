@@ -1,0 +1,48 @@
+/*******************************************************************************/
+/* Styles for use in secondary windows (such as message detail).               */                              
+/* These styles are reserved for IBM administrative portlets.                  */
+/* General portlets should not use these styles as they are subject to change. */
+/*******************************************************************************/
+
+/* PORTLET MESSAGE AND INLINE HELP TEXT STYLES */
+
+/* Status Message display - New in 6v.1 */
+.wpsStatusMsg {
+    color: #000000;
+    background-color: #E7EFF7; 
+    margin: 10px 0px;
+    padding: 5px; 
+    border: solid 2px #ABCACA; 
+    -moz-border-radius: 8px;
+}
+
+.wpsStatusMsg img {
+	vertical-align: middle;
+}
+
+/* Text for error messages - New in v6.1 */
+.wpsFieldErrorText {
+    color: #000000;
+}
+
+/* Text for warning messages - New in v6.1 */
+.wpsFieldWarningText {
+    color: #000000;
+}
+
+/* Text for success messages - New in v6.1 */
+.wpsFieldSuccessText {
+    color: #000000;
+}
+
+/* Text for information messages -New in v6.1 */
+.wpsFieldInfoText {
+    color: #000000;
+}
+
+/* Text for inline help information - New in v6.1 */
+.wpsInlineHelpText {
+    color: #666666;
+}
+
+

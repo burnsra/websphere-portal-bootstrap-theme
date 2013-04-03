@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!--
+/*********************************************************** {COPYRIGHT-TOP} ***
+* Licensed materials - Property of IBM
+* Tivoli Presentation Services 
+* 
+* (C) Copyright IBM Corp. 2002,2003
+* 
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with 
+* IBM Corp.
+************************************************************ {COPYRIGHT-END} **/
+-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="skins">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+	<xs:element ref="skin" />
+	<xs:element ref="cssskin" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="skin">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element minOccurs="0" ref="preview" />
+	<xs:sequence minOccurs="0" maxOccurs="unbounded">
+	  <xs:element ref="styleinfo" />
+	</xs:sequence>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="resourceBundle" type="xs:string" />
+      <xs:attribute name="resourceLoader" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cssskin">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element minOccurs="0" ref="preview" />
+	<xs:choice minOccurs="0" maxOccurs="unbounded">
+	  <xs:element ref="css" />
+	  <xs:element ref="image" />
+	</xs:choice>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="resourceBundle" type="xs:string" />
+      <xs:attribute name="resourceLoader" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="preview">
+    <xs:complexType>
+      <xs:sequence>
+	<xs:element minOccurs="0" ref="displayname" />
+	<xs:element minOccurs="0" ref="thumbnail" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="css">
+    <xs:complexType>
+      <xs:choice>
+	<xs:element ref="url" />
+	<xs:element ref="path" />
+	<xs:element ref="resource" />
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="image">
+    <xs:complexType>
+      <xs:choice>
+	<xs:element ref="url" />
+	<xs:element ref="path" />
+	<xs:element ref="resource" />
+      </xs:choice>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="width" type="xs:string" />
+      <xs:attribute name="height" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="url">
+    <xs:complexType>
+      <xs:attribute name="value" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="path">
+    <xs:complexType>
+      <xs:attribute name="value" type="xs:string" use="required" />
+      <xs:attribute name="resourceLoader" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resource">
+    <xs:complexType>
+      <xs:attribute name="keyName" type="xs:string" use="required" />
+      <xs:attribute name="resourceBundle" type="xs:string" />
+      <xs:attribute name="resourceLoader" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="styleinfo">
+    <xs:complexType>
+      <xs:attribute name="styleClass" type="xs:string" use="required" />
+      <xs:attribute name="componentClass" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="displayname">
+    <xs:complexType>
+      <xs:attribute name="keyName" type="xs:string" use="required" />
+      <xs:attribute name="resourceBundle" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="thumbnail">
+    <xs:complexType>
+      <xs:choice>
+	<xs:element ref="url" />
+	<xs:element ref="path" />
+	<xs:element ref="resource" />
+      </xs:choice>
+      <xs:attribute name="width" type="xs:string" />
+      <xs:attribute name="height" type="xs:string" />
+      <xs:attribute name="dir" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
+

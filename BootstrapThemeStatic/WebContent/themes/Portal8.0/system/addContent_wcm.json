@@ -1,0 +1,50 @@
+{
+localizationPackageName:"com.ibm.bundles", localizationBundleName:"Shelf",
+categories:[
+{
+"label":"shelf_all",
+"searchStr":"shelf_searchAll",
+"datastore":"com.ibm.pb.data.InstalledPortletStore",
+"url":ibmPortalConfig.contentHandlerURI + ((ibmPortalConfig.contentHandlerURI.indexOf("?")==-1)?"?":"&") + "uri=pdl:addable:oid:"+ com.ibm.mashups.enabler.navigation.Factory.getNavigationModel().find(com.ibm.mashups.builder.model.Factory.getRuntimeModel().getCurrentPage().getID()).start().getContent().start().getID()+ "&rep=compact&filterWithoutPP=category.all%3Dhide&sort=title&order=asc",
+"idPrefix":"pm:oid:",
+"renderers":[]
+},
+{
+"label":"category_web_content",
+"datastore":"com.ibm.pb.data.WcmStore",
+"url":ibmPortalConfig.contentHandlerURI + "pdl/all?filterByPP=com.ibm.portal.wcm.copy.contents%3dtrue&rep=compact",
+"idPrefix":"pm:oid:",
+"visibilityFn":"com.ibm.theme.shelf.checkForVP",
+"renderers":[]
+},
+{
+"label":"shelf_communicationsCategory",
+"searchStr":"shelf_searchCommunications",
+"datastore":"com.ibm.data.JsonStore",
+"visibilityFn":"com.ibm.theme.shelf.checkForVP",
+"url":ibmCfg.themeConfig.themeRootURI+"/system/new_wcm.json",
+"renderers":[]
+},
+{
+"label":"shelf_collabCategory",
+"searchStr":"shelf_searchCollabCategory",
+"datastore":"com.ibm.pb.data.TaggedItemStore",
+"url":ibmPortalConfig.contentHandlerURI + ((ibmPortalConfig.contentHandlerURI.indexOf("?")==-1)?"?":"&") + "uri=rm:empty&tmparam=tm%3aname%3acom.ibm.portal.addcontent.category.collab",
+"renderers":[]
+},
+{
+"label":"shelf_toolsCategory",
+"searchStr":"shelf_searchToolsCategory",
+"datastore":"com.ibm.pb.data.TaggedItemStore",
+"url":ibmPortalConfig.contentHandlerURI + ((ibmPortalConfig.contentHandlerURI.indexOf("?")==-1)?"?":"&") + "uri=rm:empty&tmparam=tm%3aname%3acom.ibm.portal.addcontent.category.tools",
+"renderers":[]
+},
+{
+"label":"shelf_adminCategory",
+"searchStr":"shelf_searchAdminCategory",
+"datastore":"com.ibm.pb.data.TaggedItemStore",
+"url":ibmPortalConfig.contentHandlerURI + ((ibmPortalConfig.contentHandlerURI.indexOf("?")==-1)?"?":"&") + "uri=rm:empty&tmparam=tm%3aname%3acom.ibm.portal.addcontent.category.admin",
+"renderers":[]
+}
+]
+}

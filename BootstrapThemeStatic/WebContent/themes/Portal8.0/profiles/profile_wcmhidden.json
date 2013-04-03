@@ -1,0 +1,286 @@
+﻿{
+	"moduleIDs": [
+		"wp_theme_portal_80",
+		"wp_portlet_css",
+		"wp_one_ui",
+		"wp_one_ui_dijit",
+		"wp_theme_skin_region",
+		"wp_theme_high_contrast",
+		"wp_portal",
+		"dojo",
+		"dojo_dom",
+		"dijit",
+		"dijit_menu",
+		"dijit_app",
+		"dijit_form",
+		"dijit_tree",
+		"dijit_layout_basic",
+		"dojox_layout_basic",
+		"wp_liveobject_framework"
+	],
+	"deferredModuleIDs": [
+		"wp_federated_documents_picker",
+		"wp_content_mapping_picker",
+		"wp_wcm_modal_dialog"
+	],
+	"titles": [
+		{
+			"value":"صفحة ادارة محتويات الانترنت المخفية",
+			"lang":"ar"
+		},
+		{
+			"value":"Pàgina oculta de WCM",
+			"lang":"ca"
+		},
+		{
+			"value":"Skrytá stránka WCM",
+			"lang":"cs"
+		},
+		{
+			"value":"Skjult WCM-side",
+			"lang":"da"
+		},
+		{
+			"value":"WCM - Ausgeblendete Seite",
+			"lang":"de"
+		},
+		{
+			"value":"Κρυφή σελίδα WCM",
+			"lang":"el"
+		},
+		{
+			"value":"WCM Hidden Page",
+			"lang":"en"
+		},
+		{
+			"value":"Página oculta de WCM",
+			"lang":"es"
+		},
+		{
+			"value":"Piilotettu WCM-sivu",
+			"lang":"fi"
+		},
+		{
+			"value":"Page masquée dans WCM",
+			"lang":"fr"
+		},
+		{
+			"value":"דף מוסתר של WCM",
+			"lang":"he"
+		},
+		{
+			"value":"WCM skrivena stranica",
+			"lang":"hr"
+		},
+		{
+			"value":"WCM rejtett oldal",
+			"lang":"hu"
+		},
+		{
+			"value":"Pagina nascosta WCM",
+			"lang":"it"
+		},
+		{
+			"value":"WCM 非表示のページ",
+			"lang":"ja"
+		},
+		{
+			"value":"WCM жасырын беті",
+			"lang":"kk"
+		},
+		{
+			"value":"WCM 숨겨진 페이지",
+			"lang":"ko"
+		},
+		{
+			"value":"Verborgen WCM-pagina",
+			"lang":"nl"
+		},
+		{
+			"value":"WCM Skjult side",
+			"lang":"no"
+		},
+		{
+			"value":"Ukryta strona WCM",
+			"lang":"pl"
+		},
+		{
+			"value":"Página oculta do WCM",
+			"lang":"pt"
+		},
+		{
+			"value":"Página Oculta do WCM",
+			"lang":"pt_BR"
+		},
+		{
+			"value":"Pagină ascunsă WCM",
+			"lang":"ro"
+		},
+		{
+			"value":"Скрытая страница WCM",
+			"lang":"ru"
+		},
+		{
+			"value":"Skrytá stránka WCM",
+			"lang":"sk"
+		},
+		{
+			"value":"Skrita stran WCM",
+			"lang":"sl"
+		},
+		{
+			"value":"Dold sida för webbinnehållshantering",
+			"lang":"sv"
+		},
+		{
+			"value":"หน้าที่ซ่อนของ WCM",
+			"lang":"th"
+		},
+		{
+			"value":"WCM Gizlenmiş Sayfası",
+			"lang":"tr"
+		},
+		{
+			"value":"Прихована сторінка WCM",
+			"lang":"uk"
+		},
+		{
+			"value":"WCM 隐藏页面",
+			"lang":"zh"
+		},
+		{
+			"value":"WCM 隱藏的頁面",
+			"lang":"zh_TW"
+		}
+	],
+	"descriptions": [
+		{
+			"value":"ملف مواصفات هذا له مجموعة من وحدات البرامج المطلوبة لدعم كل عمليات حوار ادارة محتويات الانترنت. ويتم استخدام هذا التحرير الذي يتم في موضعه، والتحرير الضمني ومربعات حوار اختيار البند.",
+			"lang":"ar"
+		},
+		{
+			"value":"Aquest perfil té el conjunt de mòduls necessari per donar suport a totes les operacions de diàleg de WCM. Això s'utilitza per a l'edició al lloc, l'edició en línia i els diàlegs de selcció d'elements.",
+			"lang":"ca"
+		},
+		{
+			"value":"Tento profil má sadu modulů nezbytnou k podpoře všech operací dialogového okna WCM. Slouží pro dialogová okna úprav na místě, vložených úprav a výběru položky.",
+			"lang":"cs"
+		},
+		{
+			"value":"Denne profil indeholder de moduler, der bruges til at understøtte alle WCM-dialogfunktioner. Anvendes til indbygget redigering og dialogbokse til elementvalg.",
+			"lang":"da"
+		},
+		{
+			"value":"Dieses Profil besitzt den Satz von Modulen, die benötigt werden, um alle WCM-Dialog-Operationen zu unterstützen. Dies wird für den Inplace-Bearbeitungs-, den Befehlszeileneditierungs- und den Artikelauswahldialog verwendet.",
+			"lang":"de"
+		},
+		{
+			"value":"Αυτό το προφίλ περιέχει τις λειτουργικές μονάδες που απαιτούνται για την υποστήριξη όλων των λειτουργιών πλαισίων διαλόγου του WCM. Χρησιμοποιείται για πλαίσια διαλόγου επιτόπου τροποποίησης, ενσωματωμένης τροποποίησης και επιλογής στοιχείων.",
+			"lang":"el"
+		},
+		{
+			"value":"This profile has the set of modules necessary to support all WCM dialog operations. This is used for inplace editing, inline editing and item selection dialogs.",
+			"lang":"en"
+		},
+		{
+			"value":"Este perfil tiene el conjunto de módulos necesario para dar soporte a todas las operaciones de diálogo de WCM. Se utiliza para edición directamente en el sitio, edición en línea y diálogos de selección de elementos.",
+			"lang":"es"
+		},
+		{
+			"value":"Tässä profiilissa on joukko moduuleja, joita tarvitaan tukemaan kaikkia WCM-valintaikkunan toimintoja. Profiilia käytetään sisäiseen muokkaukseen ja kohteiden valinnan valintaikkunoihin.",
+			"lang":"fi"
+		},
+		{
+			"value":"Ce profil possède l'ensemble de modules nécessaires à la prise en charge de toutes les opérations de boîte de dialogue WCM. Il est utilisé pour les boîtes de dialogue d'édition à la volée, d'édition en ligne et de sélection d'élément.",
+			"lang":"fr"
+		},
+		{
+			"value":"פרופיל זה כולל את מערך המודולים הדרוש לתמיכה בכל פעולות הדו-שיח של WCM.‏ הוא משמש לעריכה במקום, עריכה בשורה ותיבות דו-שיח של בחירת פריטים.",
+			"lang":"he"
+		},
+		{
+			"value":"Ovaj profil ima skup modula potrebnih za podršku svih operacija WCM dijaloga. Koristi se za uređivanje na mjestu, umetnuto uređivanje i dijaloge za odabir stavki.",
+			"lang":"hr"
+		},
+		{
+			"value":"Ez a profil az összes WCM párbeszédpanel-művelet támogatásához szükséges modulokat tartalmazza. Ez helyi szerkesztéshez, beszúrt szerkesztéshez és elemkiválasztó párbeszédablakokhoz szükséges.",
+			"lang":"hu"
+		},
+		{
+			"value":"Questo profilo contiene l'insieme di moduli necessari a supportare tutte le operazioni della finestra WCM. È utilizzato per le finestre di modifica in loco, modifica serializzata e selezione elementi.",
+			"lang":"it"
+		},
+		{
+			"value":"このプロファイルには、すべての WCM ダイアログの操作をサポートするために必要なモジュール・セットが含まれています。これは、インプレース編集、インライン編集、項目選択のダイアログに使用されます。",
+			"lang":"ja"
+		},
+		{
+			"value":"Осы профайлда барлық WCM тілқатысу терезесі әрекеттерін қолдауға қажет модульдердің жиыны бар. Бұл осы бағдарламада өңдеу, кірістірілген өңдеу және тілқатысу терезелерінде элементті таңдау үшін қолданылады.",
+			"lang":"kk"
+		},
+		{
+			"value":"이 프로파일에는 모든 WCM 대화 상자 조작을 지원하는 데 필요한 모듈 세트가 있습니다. 이 모듈은 인플레이스(inplace) 편집, 인라인 편집 및 항목 선택 대화 상자에 사용됩니다.",
+			"lang":"ko"
+		},
+		{
+			"value":"Dit profiel heeft de set van modules die benodigd zijn voor het ondersteunen van alle WCM-dialoogbewerkingen. Het wordt gebruikt bij vensters voor rechtstreeks bewerken, inline bewerken en selecteren van items.",
+			"lang":"nl"
+		},
+		{
+			"value":"Denne profilen inneholder et sett med moduler som støtter alle WCM-dialogoperasjoner. Den brukes til dialogbokser for direkteredigering, integrert redigering og valg av elementer.",
+			"lang":"no"
+		},
+		{
+			"value":"Ten profil zawiera zestaw modułów niezbędnych do obsługi operacji okna dialogowego produktu WCM. Jest używany do obsługi okien dialogowych edycji w miejscu, edycji bezpośredniej i wyboru elementów.",
+			"lang":"pl"
+		},
+		{
+			"value":"Este perfil tem o conjunto de módulos necessário para suportar todas as operações das caixas de diálogo do WCM. É utilizado para edição no local, edição incluída e caixas de diálogo de selecção de itens.",
+			"lang":"pt"
+		},
+		{
+			"value":"Este perfil possui o conjunto de módulos necessários para suportar todas as operações de diálogo do WCM. Isto é usado para edição inplace, edição sequencial e diálogos de seleção de itens.",
+			"lang":"pt_BR"
+		},
+		{
+			"value":"Acest profil are setul de module necesare pentru a suporta toate operaţiile de dialog WCM. Acesta este folosit pentru dialogurile de editare inplace, editare inline şi selecţie articole.",
+			"lang":"ro"
+		},
+		{
+			"value":"В этом профайле есть набор модулей, необходимых для поддержки всех операций с диалогами WCM. Они используются в окнах динамического и контекстного редактирования, а также выбора объектов.",
+			"lang":"ru"
+		},
+		{
+			"value":"Tento profil má množinu modulov, ktoré sú potrebné pre podporu všetkých operácií dialógových okien WCM. Toto sa používa pre dialógové okná s editovaním na mieste, inline editovaním a výberom položky.",
+			"lang":"sk"
+		},
+		{
+			"value":"Ta profil vsebuje nabor modulov, ki so potrebni za podporo vseh operacij pogovornih oken WCM. To je namenjeno urejanju na mestu, vključenem urejanju in pogovornim oknom za izbiro postavke.",
+			"lang":"sl"
+		},
+		{
+			"value":"Profilen har den uppsättning moduler som krävs för att hantera alla åtgärder i dialogrutor för webbinnehållshantering. Används för redigering på plats, integrerad redigering och dialogrutor för objektval.",
+			"lang":"sv"
+		},
+		{
+			"value":"โปรไฟล์นี้มีชุดของโมดูลที่จำเป็นในการสนับสนุนการดำเนินการไดอะล็อก WCM นี่ใช้สำหรับการแก้ไขในสถานที่ การแก้ไขในบบรรทัด และไดอะล็อกการเลือกไอเท็ม",
+			"lang":"th"
+		},
+		{
+			"value":"Bu tanıtım, tüm WCM iletişim kutusu işlemlerini desteklemek için gereken birimlerin kümesini içerir. Yerinde düzenlemede, iç düzenlemede ve öğe seçimi iletişim kutularında kullanılır.",
+			"lang":"tr"
+		},
+		{
+			"value":"Цей профайл містить набір модулів, необхідних для підтримки всіх операцій з вікнами WCM. Він служить для редагування безпосередньо на ммісці, редагування у внутрішньому форматі та для вікон вибору елементів.",
+			"lang":"uk"
+		},
+		{
+			"value":"此概要文件具有所需的模块集来支持所有 WCM 对话框选项。这用于直接编辑、直接插入编辑和项选择对话框。",
+			"lang":"zh"
+		},
+		{
+			"value":"這個設定檔具有支援所有 WCM 對話框作業所需要的模組集。這可用於就地編輯、行內編輯及項目選取對話框。",
+			"lang":"zh_TW"
+		}
+	]
+}

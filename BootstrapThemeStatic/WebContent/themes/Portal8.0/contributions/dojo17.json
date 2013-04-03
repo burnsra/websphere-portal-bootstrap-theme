@@ -1,0 +1,203 @@
+﻿{ "modules":[
+	 {
+		"id" : "dojo",
+		"prereqs" : [{
+			"id" : "dojo_17"
+		}]
+	}, {
+		"id" : "dojo_dom",
+		"prereqs" : [{
+			"id" : "dojo_dom_17"
+		}]
+	}, {
+		"id" : "dojo_app",
+		"prereqs" : [{
+			"id" : "dojo_app_17"
+		}]
+	}, {
+		"id" : "dojo_fx",
+		"prereqs" : [{
+			"id" : "dojo_fx_17"
+		}]
+	}, {
+		"id" : "dojo_fmt",
+		"prereqs" : [{
+			"id" : "dojo_fmt_17"
+		}]
+	}, {
+		"id" : "dojo_node_list",
+		"prereqs" : [{
+			"id" : "dojo_node_list_17"
+		}]
+	}, {
+		"id" : "dojo_data",
+		"prereqs" : [{
+			"id" : "dojo_data_17"
+		}]
+	}, {
+		"id" : "dojo_dnd_basic",
+		"prereqs" : [{
+			"id" : "dojo_dnd_basic_17"
+		}]
+	}, {
+		"id" : "dojo_dnd_ext",
+		"prereqs" : [{
+			"id" : "dojo_dnd_ext_17"
+		}]
+	}, {
+		"id" : "dijit",
+		"prereqs" : [{
+			"id" : "dijit_17"
+		}]
+	}, {
+		"id" : "dijit_app",
+		"prereqs" : [{
+			"id" : "dijit_app_17"
+		}]
+	}, {
+		"id" : "dijit_menu",
+		"prereqs" : [{
+			"id" : "dijit_menu_17"
+		}]
+	}, {
+		"id" : "dijit_form",
+		"prereqs" : [{
+			"id" : "dijit_form_17"
+		}]
+	}, {
+		"id" : "dijit_editor",
+		"prereqs" : [{
+			"id" : "dijit_editor_17"
+		}]
+	}, {
+		"id" : "dijit_editor_plugins",
+		"prereqs" : [{
+			"id" : "dijit_editor_plugins_17"
+		}]
+	}, {
+		"id" : "dijit_layout_basic",
+		"prereqs" : [{
+			"id" : "dijit_layout_basic_17"
+		}]
+	}, {
+		"id" : "dijit_layout_ext",
+		"prereqs" : [{
+			"id" : "dijit_layout_ext_17"
+		}]
+	}, {
+		"id" : "dijit_tree",
+		"prereqs" : [{
+			"id" : "dijit_tree_17"
+		}]
+	}, {
+		"id" : "dijit-all",
+		"prereqs" : [{
+			"id" : "dijit-all_17"
+		}]
+	}, {
+		"id" : "dojox_gfx",
+		"prereqs" : [{
+			"id" : "dojox_gfx_17"
+		}]
+	}, {
+		"id" : "dojox_charting",
+		"prereqs" : [{
+			"id" : "dojox_charting_17"
+		}]
+	}, {
+		"id" : "dojox_charting_all",
+		"prereqs" : [{
+			"id" : "dojox_charting_all_17"
+		}]
+	}, {
+		"id" : "dojox_gfx3d",
+		"prereqs" : [{
+			"id" : "dojox_gfx3d_17"
+		}]
+	}, {
+		"id" : "dojox_fx",
+		"prereqs" : [{
+			"id" : "dojox_fx_17"
+		}]
+	}, {
+		"id" : "dojox_layout_basic",
+		"prereqs" : [{
+			"id" : "dojox_layout_basic_17"
+		}]
+	}, {
+		"id" : "dojox_collections",
+		"prereqs" : [{
+			"id" : "dojox_collections_17"
+		}]
+	}, {
+		"id" : "dojox_uuid",
+		"prereqs" : [{
+			"id" : "dojox_uuid_17"
+		}]
+	}, {
+		"id" : "dojox_html_basic",
+		"prereqs" : [{
+			"id" : "dojox_html_basic_17"
+		}]
+	}, {
+		"id" : "dojox_xml",
+		"prereqs" : [{
+			"id" : "dojox_xml_17"
+		}]
+	}, {
+		"id" : "dojox_data_basic",
+		"prereqs" : [{
+			"id" : "dojox_data_basic_17"
+		}]
+	}, {
+		"id" : "dojox_data_all",
+		"prereqs" : [{
+			"id" : "dojox_data_all_17"
+		}]
+	}, {
+		"id" : "dojox_grid_all",
+		"prereqs" : [{
+			"id" : "dojox_grid_all_17"
+		}]
+	}, {
+		"id" : "dojox_aspect",
+		"prereqs" : [{
+			"id" : "dojox_aspect_17"
+		}]
+	}, {
+		"id" : "dojox_string",
+		"prereqs" : [{
+			"id" : "dojox_string_17"
+		}]
+	}, {
+		"id" : "dojox_io",
+		"prereqs" : [{
+			"id" : "dojox_io_17"
+		}]
+	}, {
+		"id" : "dojox_mobile",
+		"prereqs" : [{
+			"id" : "dojox_mobile_17"
+		}]
+	}, {
+		"id" : "dojox_mobile_app",
+		"prereqs" : [{
+			"id" : "dojox_mobile_app_17"
+		}]
+	}, {
+		"id" : "dojox_mobile_compat",
+		"prereqs" : [{
+			"id" : "dojox_mobile_compat_17"
+		}]
+	}, {
+		"id" : "dojox_mobile_app_compat",
+		"prereqs" : [{
+			"id" : "dojox_mobile_app_compat_17"
+		}]
+	}, {
+		"id" : "dojox-all",
+		"prereqs" : [{
+			"id" : "dojox-all_17"
+		}]
+	}
+]}

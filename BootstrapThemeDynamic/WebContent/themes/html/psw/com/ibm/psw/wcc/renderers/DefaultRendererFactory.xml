@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!--
+/*********************************************************** {COPYRIGHT-TOP} ***
+* Licensed materials - Property of IBM
+* Tivoli Presentation Services
+*
+* (C) Copyright IBM Corp. 2002
+*
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with
+* IBM Corp.
+************************************************************ {COPYRIGHT-END} **/
+-->
+
+<renderers>
+  <renderer-info rendererClass="com.ibm.psw.wcc.renderers.common.html.HTMLTitlebarRenderer"
+                 lookupClass="com.ibm.psw.wcc.common.WccTitlebar"
+                 markupLanguage="html" />
+  <renderer-info rendererClass="com.ibm.psw.wcc.renderers.common.html.HTMLTitlebarRenderer"
+                 lookupClass="com.ibm.psw.wcc.common.WccTitlebar"
+                 markupLanguage="xhtml" />
+  <renderer-info rendererClass="com.ibm.psw.wcc.renderers.taskbar.html.HTMLTaskbarButtonRenderer"
+                 lookupClass="com.ibm.psw.wcc.taskbar.WccTaskbarButton"
+                 markupLanguage="html" />
+  <renderer-info rendererClass="com.ibm.psw.wcc.renderers.taskbar.html.HTMLTaskbarButtonRenderer"
+                 lookupClass="com.ibm.psw.wcc.taskbar.WccTaskbarButton"
+                 markupLanguage="xhtml" />
+  <renderer-info rendererClass="com.ibm.psw.wcc.renderers.taskbar.html.HTMLTaskButtonRowRenderer"
+                 lookupClass="com.ibm.psw.wcc.taskbar.WccTaskButtonRow"
+                 markupLanguage="html" />
+  <renderer-info rendererClass="com.ibm.psw.wcc.renderers.taskbar.html.HTMLTaskButtonRowRenderer"
+                 lookupClass="com.ibm.psw.wcc.taskbar.WccTaskButtonRow"
+                 markupLanguage="xhtml" />
+  <renderer-info rendererClass="com.ibm.psw.wcc.renderers.taskbar.html.HTMLTaskbarRegionRenderer"
+                 lookupClass="com.ibm.psw.wcc.taskbar.WccTaskbarRegion"
+                 markupLanguage="html" />
+  <renderer-info rendererClass="com.ibm.psw.wcc.renderers.taskbar.html.HTMLTaskbarRegionRenderer"
+                 lookupClass="com.ibm.psw.wcc.taskbar.WccTaskbarRegion"
+                 markupLanguage="xhtml" />
+  <renderer-info rendererClass="com.ibm.psw.wcc.renderers.taskbar.html.HTMLTaskbarRenderer"
+                 lookupClass="com.ibm.psw.wcc.taskbar.WccTaskbar"
+                 markupLanguage="html" />
+  <renderer-info rendererClass="com.ibm.psw.wcc.renderers.taskbar.html.HTMLTaskbarRenderer"
+                 lookupClass="com.ibm.psw.wcc.taskbar.WccTaskbar"
+                 markupLanguage="xhtml" />
+</renderers>

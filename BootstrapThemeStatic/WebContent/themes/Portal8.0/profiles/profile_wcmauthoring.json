@@ -1,0 +1,297 @@
+﻿{
+	"moduleIDs": [
+		"wp_theme_portal_80",
+		"wp_portlet_css",
+		"wp_one_ui",
+		"wp_one_ui_dijit",
+		"wp_theme_menus",
+		"wp_theme_skin_region",
+		"wp_theme_high_contrast",
+		"wp_theme_edit",
+		"wp_project_menu",
+		"wp_portal",
+		"dojo",
+		"dojo_dom",
+		"dijit",
+		"dijit_menu",
+		"dijit_app",
+		"dijit_form",
+		"dijit_tree",
+		"dijit_layout_basic",
+		"dojox_layout_basic",
+		"wp_liveobject_framework"
+	],
+	"deferredModuleIDs": [
+		"wp_federated_documents_picker",
+		"wp_wcm_modal_dialog",
+		"wp_theme_widget",
+		"wp_toolbar",
+		"wp_project_menu_edit",
+		"wp_preview_menu",
+		"wp_content_mapping_picker",
+		"wp_template_select_dialog",
+		"wp_contextmenu_live_object",
+		"wp_content_targeting_cam",
+		"wcm_inplaceEdit"
+	],
+	"titles": [
+		{
+			"value":"تأليف ادارة محتويات الانترنت",
+			"lang":"ar"
+		},
+		{
+			"value":"Creació personalitzada de WCM",
+			"lang":"ca"
+		},
+		{
+			"value":"Tvorba obsahu WCM",
+			"lang":"cs"
+		},
+		{
+			"value":"WCM-redigering",
+			"lang":"da"
+		},
+		{
+			"value":"WCM-Authoring",
+			"lang":"de"
+		},
+		{
+			"value":"Σύνταξη περιεχομένου WCM",
+			"lang":"el"
+		},
+		{
+			"value":"WCM Authoring",
+			"lang":"en"
+		},
+		{
+			"value":"Creación personalizada de WCM",
+			"lang":"es"
+		},
+		{
+			"value":"WCM-luonti",
+			"lang":"fi"
+		},
+		{
+			"value":"Création dans WCM",
+			"lang":"fr"
+		},
+		{
+			"value":"עיצוב WCM",
+			"lang":"he"
+		},
+		{
+			"value":"WCM stvaranje",
+			"lang":"hr"
+		},
+		{
+			"value":"WCM tartalomszerzés",
+			"lang":"hu"
+		},
+		{
+			"value":"Sviluppo WCM",
+			"lang":"it"
+		},
+		{
+			"value":"WCM オーサリング",
+			"lang":"ja"
+		},
+		{
+			"value":"WCM жасау",
+			"lang":"kk"
+		},
+		{
+			"value":"WCM 작성",
+			"lang":"ko"
+		},
+		{
+			"value":"WCM Authoring",
+			"lang":"nl"
+		},
+		{
+			"value":"WCM Redigering",
+			"lang":"no"
+		},
+		{
+			"value":"Tworzenie treści produktu WCM",
+			"lang":"pl"
+		},
+		{
+			"value":"Autoria do WCM",
+			"lang":"pt"
+		},
+		{
+			"value":"WCM Authoring",
+			"lang":"pt_BR"
+		},
+		{
+			"value":"Creaţie WCM",
+			"lang":"ro"
+		},
+		{
+			"value":"Создание WCM",
+			"lang":"ru"
+		},
+		{
+			"value":"Tvorba obsahu WCM",
+			"lang":"sk"
+		},
+		{
+			"value":"Avtoring WCM",
+			"lang":"sl"
+		},
+		{
+			"value":"Webbinnehållshantering",
+			"lang":"sv"
+		},
+		{
+			"value":"การเขียน WCM",
+			"lang":"th"
+		},
+		{
+			"value":"WCM Yazma",
+			"lang":"tr"
+		},
+		{
+			"value":"Створення WCM",
+			"lang":"uk"
+		},
+		{
+			"value":"WCM 编写",
+			"lang":"zh"
+		},
+		{
+			"value":"WCM 編寫",
+			"lang":"zh_TW"
+		}
+	],
+	"descriptions": [
+		{
+			"value":"ملف المواصفات هذه له مجموعة كاملة من وحدات البرامج المطلوبة لدعم خبرة تأليف ادارة محتويات الانترنت الكاملة. ",
+			"lang":"ar"
+		},
+		{
+			"value":"Aquest perfil té el conjunt complet de mòduls necessari per donar suport a l'experiència completa de creació personalitzada de WCM.",
+			"lang":"ca"
+		},
+		{
+			"value":"Tento profil má úplnou sadu modulů nezbytnou k vyzkoušení všech funkcí tvorby obsahu WCM. ",
+			"lang":"cs"
+		},
+		{
+			"value":"Denne profil indeholder de moduler, der bruges til at understøtte fuldstændig WCM-redigering.",
+			"lang":"da"
+		},
+		{
+			"value":"Dieses Profil besitzt den vollständigen Satz von Modulen, die erforderlich sind, um die volle WCM-Authoring-Erfahrung zu unterstützen. ",
+			"lang":"de"
+		},
+		{
+			"value":"Αυτό το προφίλ περιέχει το πλήρες σύνολο των λειτουργικών μονάδων που απαιτούνται για την υποστήριξη όλων των λειτουργιών σύνταξης περιεχομένου του WCM. ",
+			"lang":"el"
+		},
+		{
+			"value":"This profile has the complete set of modules required to support the full WCM Authoring experience. ",
+			"lang":"en"
+		},
+		{
+			"value":"Este perfil contiene el conjunto completo de módulos necesarios para dar soporte a la experiencia completa de creación personalizada de WCM.",
+			"lang":"es"
+		},
+		{
+			"value":"Tässä profiilissa on kattava joukko moduuleja, jota tarvitaan tukemaan monipuolista WCM-luontikokemusta. ",
+			"lang":"fi"
+		},
+		{
+			"value":"Ce profil possède l'ensemble complet de modules nécessaires à la prise en charge de l'expérience de création dans WCM.",
+			"lang":"fr"
+		},
+		{
+			"value":"פרופיל זה כולל את מערך המודולים השלם הנחוץ לתמיכה בעיצוב מלא של WCM.‏ ",
+			"lang":"he"
+		},
+		{
+			"value":"Ovaj profil sadrži potpuni skup modula potrebnih za podršku cjelovitog iskustva WCM stvaranja. ",
+			"lang":"hr"
+		},
+		{
+			"value":"Ez a profil a teljes WCM tartalomszerzési élmény támogatásához szükséges modulok teljes készletét tartalmazza. ",
+			"lang":"hu"
+		},
+		{
+			"value":"Questo profilo contiene l'insieme completo di moduli richiesti per supportare l'intera procedura di sviluppo di WCM. ",
+			"lang":"it"
+		},
+		{
+			"value":"このプロファイルには、すべての WCM オーサリング・エクスペリエンスをサポートするために必要な、完全なモジュール・セットが含まれています。",
+			"lang":"ja"
+		},
+		{
+			"value":"Осы профайлда толық WCM жасау тәжірибесн қолдау үшін қажет модульдердің толық жиыны бар. ",
+			"lang":"kk"
+		},
+		{
+			"value":"이 프로파일에는 전체 WCM 작성 경험을 지원하는 데 필요한 전체 모듈 세트가 있습니다. ",
+			"lang":"ko"
+		},
+		{
+			"value":"Dit profiel beschikt over de volledige set van modules die vereist zijn voor de ondersteuning van de gehele gebruikservaring met WCM Authoring.",
+			"lang":"nl"
+		},
+		{
+			"value":"Denne profilen inneholder et fullstendig sett med moduler som gir støtte for WCM-redigering. ",
+			"lang":"no"
+		},
+		{
+			"value":"Ten profil zawiera pełny zestaw modułów niezbędnych do obsługi tworzenia treści w produkcie WCM. ",
+			"lang":"pl"
+		},
+		{
+			"value":"Este perfil tem o conjunto completo de módulos requerido para suportar a experiência completa de autoria do WCM. ",
+			"lang":"pt"
+		},
+		{
+			"value":"Este perfil possui o conjunto completo de módulos necessários para suportar a experiência integral do WCM Authoring. ",
+			"lang":"pt_BR"
+		},
+		{
+			"value":"Acest profil are setul complet de module necesar pentru o experienţă completă de creaţie WCM.",
+			"lang":"ro"
+		},
+		{
+			"value":"Этот профайл содержит полный набор модулей, необходимых для поддержки всех функций создания материалов в WCM. ",
+			"lang":"ru"
+		},
+		{
+			"value":"Tento profil má úplnú množinu modulov, ktoré sú potrebné na podporu úplnej skúsenosti pri tvorbe obsahu WCM. ",
+			"lang":"sk"
+		},
+		{
+			"value":"Ta profil vsebuje celoten nabor modulov, potrebnih za podporo celotne izkušnje avtoringa WCM.",
+			"lang":"sl"
+		},
+		{
+			"value":"Profilen har en fullständig uppsättning moduler som krävs för att utnyttja alla funktioner för webbinnehållshantering. ",
+			"lang":"sv"
+		},
+		{
+			"value":"โปรไฟล์นี้มีชุดที่สมบุรณ์ของโมดูลที่จำเป็นต่อการสนับสนุนประสบการณ์เขียน WCM แบบเต็มรูปแบบ   ",
+			"lang":"th"
+		},
+		{
+			"value":"Bu tanıtım, tüm WCM Yazma deneyimini desteklemek için gereken eksiksiz bir birim kümesi çerir. ",
+			"lang":"tr"
+		},
+		{
+			"value":"Цей профайл містить повний набір модулів, необхідних для підтримки повного інтерфейсу створення WCM. ",
+			"lang":"uk"
+		},
+		{
+			"value":"此概要文件具有所需的完整模块集来支持完整的“WCM 编写”体验。",
+			"lang":"zh"
+		},
+		{
+			"value":"這個設定檔具有支援完整 WCM 編寫體驗所需要的完整模組集。",
+			"lang":"zh_TW"
+		}
+	]
+}

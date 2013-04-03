@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!--
+/*********************************************************** {COPYRIGHT-TOP} ***
+* Licensed materials - Property of IBM
+* Tivoli Presentation Services 
+* 
+* (C) Copyright IBM Corp. 2003
+* 
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with 
+* IBM Corp.
+************************************************************ {COPYRIGHT-END} **/
+-->
+
+<skins>
+  <skin name="BaseSkin">
+    <styleinfo styleClass="com.ibm.psw.cct.skins.base.BaseConsoleStyleInfo"
+               componentClass="com.ibm.psw.cct.console.CctConsole" />
+  </skin>
+  
+  <!-- The Tungsten Skin -->
+  <skin name="TungstenSkin">
+    <styleinfo styleClass="com.ibm.psw.cct.skins.tungsten.TungstenConsoleStyleInfo" 
+               componentClass="com.ibm.psw.cct.console.CctConsole" />
+  </skin>
+  
+  <!-- The Sage Skin -->
+  <skin name="SageSkin">
+    <styleinfo styleClass="com.ibm.psw.cct.skins.tungsten.TungstenConsoleStyleInfo" 
+               componentClass="com.ibm.psw.cct.console.CctConsole" />
+  </skin>
+</skins>

@@ -1,0 +1,57 @@
+{
+    "modules":[{
+        "id":"wp_contextmenu_templates",
+        "contributions":[{
+            "type":"config",
+            "sub-contributions":[{
+                "type":"markup",
+                "uris":[{
+                    "value":"/menuDefinitions/templates/componentActionMenuTemplate.html"
+                }]
+            },{
+                "type":"markup",
+                "uris":[{
+                
+                    "value":"/menuDefinitions/templates/inlineEditMenuTemplate.html"
+                }]
+            }]
+        }]
+    }, {
+        "id":"wp_contextmenu_css",
+        "prereqs":[{
+            "id":"wp_one_ui_30"
+        }],
+        "contributions":[{
+            "type":"head",
+            "sub-contributions":[{
+                "type":"css",
+                "uris":[{
+                    "value":"/css/wp_contextmenu.css"
+                }, {
+                    "value":"/css/wp_contextmenu.css.uncompressed.css",
+                    "type":"debug"
+                }, {
+                    "value":"/css/wp_contextmenuRTL.css",
+                    "type":"rtl"
+                }, {
+                    "value":"/css/wp_contextmenuRTL.css.uncompressed.css",
+                    "type":"rtl,debug"
+                }]
+            }]
+                
+        }]
+    },{
+        "id":"wp_contextmenu_main",
+        "capability": {
+            "id": "contextmenu",
+            "value": "1.0"
+        },
+        "prereqs":[{
+            "id":"wp_contextmenu_js"
+        }, {
+            "id":"wp_contextmenu_templates"
+        }, {
+            "id":"wp_contextmenu_css"
+        }]
+    }]
+}

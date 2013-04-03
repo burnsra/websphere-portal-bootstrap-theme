@@ -1,0 +1,13 @@
+{
+localizationPackageName:"com.ibm.bundles", localizationBundleName:"Shelf",
+categories:[
+{
+"label":"shelf_all",
+"searchStr":"shelf_searchAll",
+"datastore":"com.ibm.pb.data.InstalledPortletStore",
+"url":ibmPortalConfig.contentHandlerURI + "pdl/addable:oid:"+com.ibm.mashups.enabler.navigation.Factory.getNavigationModel().find(com.ibm.mashups.builder.model.Factory.getRuntimeModel().getCurrentPage().getID()).start().getContent().start().getID()+"?rep=compact&filterWithoutPP=category.all%3Dhide&sort=title&order=asc",
+"idPrefix":"pm:oid:",
+"renderers":[]
+}
+]
+}

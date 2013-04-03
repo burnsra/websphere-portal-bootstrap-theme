@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!--
+/*********************************************************** {COPYRIGHT-TOP} ***
+* Licensed materials - Property of IBM
+* Tivoli Presentation Services 
+* 
+* (C) Copyright IBM Corp. 2002
+* 
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with 
+* IBM Corp.
+************************************************************ {COPYRIGHT-END} **/
+-->
+
+<!-- Some valid values for markup language and version
+  markupLanguage="html"
+    markupVersion="2.0"
+    markupVersion="3.2"
+    markupVersion="4.0"
+  markupLanguage="xhtml"
+    markupVersion="1.0"
+  markupLanguage="wml"
+    markupVersion="1.0"
+  markupLanguage="xml"
+    markupVersion="1.0"
+-->  
+
+<!-- Some valid values for browser
+  browser="Microsoft Internet Explorer"
+  browser="Netscape Navigator"
+  browser="Opera"
+  browser="America Online/Microsoft Internet Explorer"
+  browser="WebTV"
+-->    
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="renderers">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="renderer-info" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="renderer-info">
+    <xs:complexType>
+      <xs:attribute name="rendererClass" type="xs:string" use="required" />
+      <xs:attribute name="lookupClass" type="xs:string" use="required" />
+      <xs:attribute name="markupLanguage" type="xs:string" />
+      <xs:attribute name="markupVersion" type="xs:string" />
+      <xs:attribute name="browser" type="xs:string" />
+      <xs:attribute name="browserVersion" type="xs:string" />
+      <xs:attribute name="device" type="xs:string" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

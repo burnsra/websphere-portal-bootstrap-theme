@@ -1,0 +1,4 @@
+{ localizationPackageName:'com.ibm.bundles', localizationBundleName:'Shelf', identifier:'label', items: [
+	{'label':'new_wcm_feed','takeover':'com.ibm.pb.customize.enabler.AddContentController.newFeed','description':'new_wcm_feedDescription','thumbnail':ibmCfg.themeConfig.themeRootURI+'/images/addContent/feed_16.png'}
+   ] 
+}

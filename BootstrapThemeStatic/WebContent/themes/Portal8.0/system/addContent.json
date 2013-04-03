@@ -1,0 +1,41 @@
+{
+localizationPackageName:"com.ibm.bundles", localizationBundleName:"Shelf",
+categories:[
+{
+"label":"shelf_all",
+"searchStr":"shelf_searchAll",
+"datastore":"com.ibm.pb.data.InstalledPortletStore",
+"url":ibmPortalConfig.contentHandlerURI + ((ibmPortalConfig.contentHandlerURI.indexOf("?")==-1)?"?":"&") + "uri=pdl:addable:oid:"+ com.ibm.mashups.enabler.navigation.Factory.getNavigationModel().find(com.ibm.mashups.builder.model.Factory.getRuntimeModel().getCurrentPage().getID()).start().getContent().start().getID()+ "&rep=compact&filterWithoutPP=category.all%3Dhide&sort=title&order=asc",
+"idPrefix":"pm:oid:",
+"renderers":[]
+},
+{
+"label":"shelf_communicationsCategory",
+"searchStr":"shelf_searchCommunications",
+"datastore":"com.ibm.data.JsonStore",
+"url":ibmCfg.themeConfig.themeRootURI+"/system/new.json",
+"renderers":[]
+},
+{
+"label":"shelf_collabCategory",
+"searchStr":"shelf_searchCollabCategory",
+"datastore":"com.ibm.pb.data.TaggedItemStore",
+"url":ibmPortalConfig.contentHandlerURI + ((ibmPortalConfig.contentHandlerURI.indexOf("?")==-1)?"?":"&") + "uri=rm:empty&tmparam=tm%3aname%3acom.ibm.portal.addcontent.category.collab",
+"renderers":[]
+},
+{
+"label":"shelf_toolsCategory",
+"searchStr":"shelf_searchToolsCategory",
+"datastore":"com.ibm.pb.data.TaggedItemStore",
+"url":ibmPortalConfig.contentHandlerURI + ((ibmPortalConfig.contentHandlerURI.indexOf("?")==-1)?"?":"&") + "uri=rm:empty&tmparam=tm%3aname%3acom.ibm.portal.addcontent.category.tools",
+"renderers":[]
+},
+{
+label":"shelf_adminCategory",
+"searchStr":"shelf_searchAdminCategory",
+"datastore":"com.ibm.pb.data.TaggedItemStore",
+"url":ibmPortalConfig.contentHandlerURI + ((ibmPortalConfig.contentHandlerURI.indexOf("?")==-1)?"?":"&") + "uri=rm:empty&tmparam=tm%3aname%3acom.ibm.portal.addcontent.category.admin",
+"renderers":[]
+}
+]
+}

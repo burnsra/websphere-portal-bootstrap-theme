@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="US-ASCII"?>
+
+<!--
+/*********************************************************** {COPYRIGHT-TOP} ***
+* Licensed materials - Property of IBM
+* Tivoli Presentation Services
+*
+* (C) Copyright IBM Corp. 2002,2003
+*
+* US Government Users Restricted Rights - Use, duplication, or
+* disclosure restricted by GSA ADP Schedule Contract with
+* IBM Corp.
+************************************************************ {COPYRIGHT-END} **/
+-->
+
+<skins>
+  <skin name="BaseSkin">
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.base.BaseTitlebarStyleInfo"
+               componentClass="com.ibm.psw.wcc.common.WccTitlebar" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.base.BaseTaskbarStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccTaskbarButton" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.base.BaseTaskbarStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccTaskButtonRow" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.base.BaseTaskbarStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccTaskbarRegion" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.base.BaseTaskbarStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccTaskbar" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.base.BaseCanvasStyleInfo"
+               componentClass="com.ibm.psw.wcc.canvas.WccCanvas" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.base.BasePortfolioStyleInfo"
+               componentClass="com.ibm.psw.wcc.portfolio.WccPortfolio" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.base.BaseAllTasksButtonStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccAllTasksButton" />
+  </skin>
+
+  <!-- The Tungsten Skin -->
+  <skin name="TungstenSkin">
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.tungsten.TungstenTitlebarStyleInfo"
+               componentClass="com.ibm.psw.wcc.common.WccTitlebar" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.tungsten.TungstenTaskbarStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccTaskbarButton" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.tungsten.TungstenTaskbarStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccTaskButtonRow" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.tungsten.TungstenTaskbarStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccTaskbarRegion" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.tungsten.TungstenTaskbarStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccTaskbar" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.tungsten.TungstenCanvasStyleInfo"
+               componentClass="com.ibm.psw.wcc.canvas.WccCanvas" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.tungsten.TungstenPortfolioStyleInfo"
+               componentClass="com.ibm.psw.wcc.portfolio.WccPortfolio" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.tungsten.TungstenAllTasksButtonStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccAllTasksButton" />
+  </skin>
+
+  <!-- The Sage Skin -->
+  <skin name="SageSkin">
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.sage.SageTitlebarStyleInfo"
+               componentClass="com.ibm.psw.wcc.common.WccTitlebar" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.sage.SageTaskbarStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccTaskbarButton" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.sage.SageTaskbarStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccTaskButtonRow" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.sage.SageTaskbarStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccTaskbarRegion" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.sage.SageTaskbarStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccTaskbar" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.sage.SageCanvasStyleInfo"
+               componentClass="com.ibm.psw.wcc.canvas.WccCanvas" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.sage.SagePortfolioStyleInfo"
+               componentClass="com.ibm.psw.wcc.portfolio.WccPortfolio" />
+    <styleinfo styleClass="com.ibm.psw.wcc.skins.sage.SageAllTasksButtonStyleInfo"
+               componentClass="com.ibm.psw.wcc.taskbar.WccAllTasksButton" />
+  </skin>
+</skins>
