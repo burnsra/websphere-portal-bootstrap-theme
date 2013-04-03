@@ -9,4 +9,14 @@
 		<welcome-file>default.htm</welcome-file>
 		<welcome-file>default.jsp</welcome-file>
 	</welcome-file-list>
+	<context-param>
+		<description>A regular expression that defined which of the resources can be accessed.</description>
+		<param-name>com.ibm.portal.whitelist</param-name>
+		<param-value>.*</param-value>
+	</context-param>
+	<context-param>
+		<description>A regular expression that defined which of the resources cannot be accessed.</description>
+		<param-name>com.ibm.portal.blacklist</param-name>
+		<param-value>WEB-INF/.*</param-value>
+	</context-param>
 </web-app>
