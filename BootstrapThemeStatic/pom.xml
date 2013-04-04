@@ -35,7 +35,9 @@
 								</copy>
 								<copy todir="./WebContent/themes/Portal8.0/js/" overwrite="true">
 									<fileset dir="../bootstrap/docs/assets/js/">
-										<include name="**.js"/>
+										<include name="**bootstrap**.js"/>
+										<include name="**html5shiv**.js"/>
+										<include name="**jquery**.js"/>
 									</fileset>
 								</copy>
 							</tasks>
