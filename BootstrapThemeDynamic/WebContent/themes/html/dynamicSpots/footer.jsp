@@ -33,3 +33,17 @@
 <c:if test="${deviceClass == 'smartphone'}">
 	<script>window.scrollTo(0, 47);</script>
 </c:if>
+<script id="JS_jQuery" src="/BootstrapThemeStatic/themes/Portal8.0/js/jquery.js"></script>
+<script id="JS_BootstrapTransition" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-transition.js"></script>
+<script id="JS_BootstrapAlert" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-alert.js"></script>
+<script id="JS_BootstrapModal" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-modal.js"></script>
+<script id="JS_BootstrapDropdown" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-dropdown.js"></script>
+<script id="JS_BootstrapScrollspy" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-scrollspy.js"></script>
+<script id="JS_BootstrapTab" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-tab.js"></script>
+<script id="JS_BootstrapTooltip" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-tooltip.js"></script>
+<script id="JS_BootstrapPopover" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-popover.js"></script>
+<script id="JS_BootstrapButton" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-button.js"></script>
+<script id="JS_BootstrapCollapse" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-collapse.js"></script>
+<script id="JS_BootstrapCarousel" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-carousel.js"></script>
+<script id="JS_BootstrapTypeahead" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-typeahead.js"></script>
+<script id="JS_BootstrapAffix" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-affix.js"></script>

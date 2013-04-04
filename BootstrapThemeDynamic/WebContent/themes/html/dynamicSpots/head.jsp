@@ -29,3 +29,5 @@
 	}
 }
 %>
+<link id="CSS_Bootstrap" href="/BootstrapThemeStatic/themes/Portal8.0/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link id="CSS_BootstrapResponsive" href="/BootstrapThemeStatic/themes/Portal8.0/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
