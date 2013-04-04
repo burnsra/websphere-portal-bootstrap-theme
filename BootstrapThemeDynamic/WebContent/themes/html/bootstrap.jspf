@@ -122,7 +122,7 @@ private void initRequest(PageContext pageContext) throws ModelException, Seriali
 	
 	ContextAccessor contextAccessor = pocSvc.getContextAccessor();
 	com.ibm.portal.resolver.ServletContext context = pocSvc.getContext();
-	URI davURI = pocSvc.createURI("dav","fs-type1/common-resources/ibm/css/portal/ibmPortlets.css");
+	URI davURI = pocSvc.createURI("war","BootstrapThemeStatic/common-resources/ibm/css/portal/ibmPortlets.css");
 	DataSource davDataSource = dataSourceFactory.newSource(davURI, "download", Collections.EMPTY_MAP, context);
 	String digest = contextAccessor.getDigest(davDataSource);
 	
