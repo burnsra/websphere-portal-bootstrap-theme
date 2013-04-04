@@ -40,6 +40,11 @@
 										<include name="**jquery**.js"/>
 									</fileset>
 								</copy>
+								<copy todir="./WebContent/themes/Portal8.0/img/" overwrite="true">
+									<fileset dir="../bootstrap/docs/assets/img/">
+										<include name="**glyphicons**.png"/>
+									</fileset>
+								</copy>
 							</tasks>
 						</configuration>
 						<goals>
