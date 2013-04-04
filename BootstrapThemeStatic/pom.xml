@@ -33,6 +33,11 @@
 										<include name="**bootstrap**.css"/>
 									</fileset>
 								</copy>
+								<copy todir="./WebContent/themes/Portal8.0/js/" overwrite="true">
+									<fileset dir="../bootstrap/docs/assets/js/">
+										<include name="**.js"/>
+									</fileset>
+								</copy>
 							</tasks>
 						</configuration>
 						<goals>
