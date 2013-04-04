@@ -74,7 +74,7 @@ article, aside, footer, header, hgroup,  nav, section {display:block} /*html 5 e
 	margin-top: 5px;
 }
 
-/*** Top Navigation - 80theme_topNav dynamic spot ***/
+/*** Top Navigation - BootstrapTheme_topNav dynamic spot ***/
 .wpthemeHeader .wpthemeNavContainer1 {
 	float: left;
 }
@@ -141,7 +141,7 @@ article, aside, footer, header, hgroup,  nav, section {display:block} /*html 5 e
 	line-height: 1.67;
 }
 
-/* Edit and View buttons - 80theme_pageModeToggle dynamic spot */
+/* Edit and View buttons - BootstrapTheme_pageModeToggle dynamic spot */
 .wpthemeModeToggle {
 	border:solid black 1px !important; 
 	background-color:#3b3b3b !important; 
@@ -205,7 +205,7 @@ article, aside, footer, header, hgroup,  nav, section {display:block} /*html 5 e
 	display:inline;
 }
 
-/* Primary Navigation - 80theme_primaryNav dynamic spot  */
+/* Primary Navigation - BootstrapTheme_primaryNav dynamic spot  */
 .wpthemeBanner .wpthemeNavContainer1 {
 	float: left;
 }
@@ -402,7 +402,7 @@ article, aside, footer, header, hgroup,  nav, section {display:block} /*html 5 e
 	padding: 0;
 }
 
-/* secondary nav - 80theme_secondaryNav dynamic spot */
+/* secondary nav - BootstrapTheme_secondaryNav dynamic spot */
 .wpthemeSecondaryNav{
 	clear: both;
 }

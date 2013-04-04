@@ -84,7 +84,7 @@
 		<c:if test="${hasSearch && startLevel == curLevel}">
 			<%-- output a search bar as the top entry in the navigation --%>
 			<li class="wpthemeNavListItem wpthemeNavSearch">
-				<r:dataSource uri="dyn-cs:id:80theme_mobileSearch" escape="none"/>
+				<r:dataSource uri="dyn-cs:id:BootstrapTheme_mobileSearch" escape="none"/>
 			</li>
 		</c:if>
 		</portal-navigation:urlGeneration>
