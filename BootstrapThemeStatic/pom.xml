@@ -45,6 +45,16 @@
 										<include name="**glyphicons**.png"/>
 									</fileset>
 								</copy>
+								<copy todir="./WebContent/themes/Portal8.0/fonts/" overwrite="true">
+									<fileset dir="../bootstrap/docs/assets/fonts/">
+										<include name="**"/>
+									</fileset>
+								</copy>
+								<copy todir="./WebContent/themes/Portal8.0/ico/" overwrite="true">
+									<fileset dir="../bootstrap/docs/assets/ico/">
+										<include name="**"/>
+									</fileset>
+								</copy>
 							</tasks>
 						</configuration>
 						<goals>
