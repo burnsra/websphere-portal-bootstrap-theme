@@ -1,10 +1,13 @@
-<div class="hiddenWidgetsDiv">
-	<!-- widgets in this container are hidden in the UI by default -->
-	<div class="component-container hiddenWidgetsContainer ibmDndRow wpthemeCol12of12 wpthemeFull" name="ibmHiddenWidgets"></div>
-	<div style="clear:both"></div>
+<div class="row">
+	<div class="hiddenWidgetsDiv">
+		<!-- widgets in this container are hidden in the UI by default -->
+		<div class="component-container hiddenWidgetsContainer ibmDndRow"
+			name="ibmHiddenWidgets"></div>
+		<div style="clear: both"></div>
+	</div>
 </div>
-<!-- this layout has two equally sized columns -->
-<div class="wptheme2Col wpthemeEqual">
-	<div class="component-container wpthemeCol wpthemePrimaryContainer ibmDndColumn wpthemeLeft wpthemeCol6of12 wpthemeMedium" name="ibmMainContainer"></div>
-	<div class="component-container wpthemeCol wpthemeSecondaryContainer ibmDndColumn wpthemeLeft wpthemeCol6of12 wpthemeMedium" name="right"></div>
+<!-- this layout has 2 columns that space respectively across the page -->
+<div class="row">
+	<div class="component-container col-span-6" name="ibmMainContainer"></div>
+	<div class="component-container col-span-6" name="right"></div>
 </div>
