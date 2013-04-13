@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" >
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <!-- rel=dynamic-content indicates an element that is replaced with the contents produced by the specified href. 
 	 dyn-cs:* URIs are resolved using the WP DynamicContentSpotMappings resource environment provider. These values can
 	 also be set using theme metadata if a theme is specified in the URI (e.g. @tl:oid:theme_unique_name). -->
@@ -10,92 +10,88 @@
 <link rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_head">
 <!-- rendering is delegated to the specified href for each locale -->
 </head>
-<body class="lotusui30dojo tundra locale_en">	
-	
-	<div class="wpthemeFrame">
-		
+<body class="lotusui30dojo tundra locale_en">
+
+	<div id="bodyContainer" class="container">
+
 		<header role="banner">
 
-			<div class="wpthemeHeader">
+			<div id="topNav" class="navbar navbar-inverse" style="display:none;">
 				<!-- inserts the managed pages preview mode contributions -->
 				<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_preview"></a>
 
-				<div class="wpthemeInner">
-					<div class="wpthemeLogo wpthemeLeft">
-						<span class="wpthemeAltText">IBM WebSphere Portal</span>
-					</div>
-					
-					<!-- renders the top navigation -->
-					<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_topNav"></a>
-					
-					<!-- displays the state of the current page -->
-					<div class="wpthemeRight">
-						<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_projectMenu"></a>
-						<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_pageModeToggle"></a>
+				<div class="navbar-inner">
+					<div class="container">
+						<div class="pull-left">
+							<!-- renders the top navigation -->
+							<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_topNav"></a>
+						</div>
+						<div class="pull-right">
+							<!-- displays the state of the current page -->
+							<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_projectMenu"></a>
+							<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_pageModeToggle"></a>
+						</div>
 					</div>
 				</div>
 			</div><!-- end header -->
 
 			<!-- inserts the universal toolbar -->
 			<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_toolbar"></a>
-			
-			<div class="wpthemeBanner">
-				<div class="wpthemeBannerInner">
-					<div class="wpthemeInner">
-						<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_search"></a>
-						<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_commonActions"></a>
-						<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_mobileNav"></a>
-						<div class="wpthemeClear"></div>
-					</div>
-				</div>
-			</div><!--end main banner-->
-			
-			<div class="wpthemeBanner wpthemeBannerPrimaryNavigation">
-				<div class="wpthemeBannerInner">
-					<div class="wpthemeInner">
-						<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_primaryNav"></a>
-						<div class="wpthemeClear"></div>
+
+			<div id="priNav" class="navbar navbar-inverse navbar-fixed-top">
+				<div class="navbar-inner">
+					<div class="container">
+						<a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</a>
+						<a class="navbar-brand" href="#">WebSphere Portal</a>
+						<div class="nav-collapse collapse">
+							<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_primaryNav"></a>
+							<div class="pull-right">
+								<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_search"></a>
+								<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_commonActions"></a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div><!--end primary nav banner-->
-			
-			<div class="wpthemeSecondaryBanner">
-				<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_secondaryNav"></a>
-				<div class="wpthemeClear"></div>
-			</div><!--end secondary banner-->
-		</header>
 
-		<div class="wpthemeMainContent" role="main" >
-			<div class="wpthemeInner">	
-				<!-- asa markup contributions for pages -->	
+			<div id="secNav" class="wpthemeSecondaryBanner">
+				<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_secondaryNav"></a>
+			</div><!--end secondary banner-->
+
+			<div class="container">	
+				<!-- asa markup contributions for pages -->
 				<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_asa"></a>
 				<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_crumbTrail"></a>
 				<div class="wpthemeClear"></div>
 				<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_status"></a>
-			</div>		
+			</div><!--end crumbtrail banner-->
+
+		</header>
+
+		<div class="wpthemeMainContent" role="main" >
 
 			<!-- required - do not remove -->
 			<a rel="dynamic-content" href="state.portlet:portlet?include=windowState&include=portletMode&mime-type=text/html"></a>
 			
-			<div id="layoutContainers" class="wpthemeLayoutContainers wpthemeLayoutContainersHidden" >	
-				<div class="wpthemeInner">					
+			<div id="layoutContainers" class="wpthemeLayoutContainers wpthemeLayoutContainersHidden" >
+				<div class="container">
 					<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_layout"></a>
-					<div class="wpthemeClear"></div>
 				</div>
 			</div>
 		</div><!--end main content-->
-		
-		<footer class="wpthemeFooter" role="contentinfo">
-			<div class="wpthemeInner">	
-				<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_footer"></a>
-				<div class="wpthemeClear"></div>
-			</div>
+
+		<footer class="container" role="contentinfo">
+			<a rel="dynamic-content" href="dyn-cs:id:BootstrapTheme_footer"></a>
 		</footer><!-- page footer -->
-		
+
 	</div><!-- end frame -->
-		
-    <!-- This is responsible for bootstrapping the configuration for the javascript framework. 
-        This is located here instead of the head section to improve client performance. -->
+
+	<!-- This is responsible for bootstrapping the configuration for the javascript framework. 
+		This is located here instead of the head section to improve client performance. -->
 	<div class="wpthemeComplementaryContent" id="wpthemeComplementaryContent" role="region" aria-labelledby="wpthemeComplementaryContentText">
 		<span class="wpthemeAltText" id="wpthemeComplementaryContentText" >Complementary Content</span>
 		<a rel="dynamic-content" href="co:config"></a>

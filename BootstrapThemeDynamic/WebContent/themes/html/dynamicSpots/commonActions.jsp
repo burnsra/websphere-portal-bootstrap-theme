@@ -11,25 +11,12 @@
     * selectionPath
     * deviceClass
     * isMobile --%>
-<c:if test="${isMobile}"><div class="wpthemeMobile"></c:if>
-<ul class="wpthemeCommonActions wpthemeLeft">
-	<%-- Logo --%>
-	<li>
-		<span class="wpthemeBranding">
-		    <c:set var="node" value="${selectionPath[1]}"/>
-		    <c:set var="nodeID" value="${wp.identification[node]}"/>
-		    <a class="wpthemeBrandingLink" href="?uri=nm:oid:${nodeID}" alt="<portal-fmt:out>${node.title}</portal-fmt:out>">
-			<img src="${themeConfig['resources.modules.ibm.contextRoot']}/themes/html/dynamicSpots/icons/blank.gif" alt="<portal-fmt:text key="theme.ibmLogo" bundle="nls.commonUI"/>">
-			</a>
-			<span class="wpthemeAltText"><portal-fmt:text key="theme.ibmLogo" bundle="nls.commonUI"/></span>
-		</span>
-	</li>
-</ul>
-<ul class="wpthemeCommonActions wpthemeRight">
+<c:if test="${isMobile}"><div class="wwpthemeMobile"></c:if>
+<ul class="nav">
 	<portal-logic:if loggedIn="yes">
 	<%-- Username is used as a link to 'Edit My Profile' --%>
 	<c:if test="${deviceClass != 'smartphone'}">
-	<li class="wpthemeFirst" id="wpthemeUserName">	
+	<li id="wpthemeUserName" class="visible-desktop">	
 	<portal-internal:adminlinkinfo name="SELFCARE">
 	<portal-navigation:urlGeneration contentNode="<%=wpsContentNode%>" layoutNode="<%= wpsCompositionNode %>" portletWindowState="Normal" themeTemplate="" portletParameterType="render">
 	<portal-navigation:urlParam type="render" name="ao" value="thm"/>
@@ -40,7 +27,7 @@
 	</li>
 	</c:if>
 	<c:if test="${!isMobile}">
-	<li id="wpthemeActionsMenu">
+	<li id="wpthemeActionsMenu" style="visibility:hidden;display:none;">
 	<%--
 	This creates the Actions context menu for page actions.  We use the
 	&#36; HTML entity to encode the $ character so that it won't be interpreted
@@ -74,14 +61,14 @@
 	</li>
 	</c:if>
 	<%-- Logout Link --%>
-	<li id="wpthemeLogout">
-		<a id="logoutlink" href="<portal-navigation:url command='LogoutUser' keepNavigationalState='false'/>"><portal-fmt:text key="link.logout" bundle="nls.engine"/></a>
+	<li>
+		<a href="<portal-navigation:url command='LogoutUser' keepNavigationalState='false'/>"><portal-fmt:text key="link.logout" bundle="nls.engine"/></a>
 	</li>
 	</portal-logic:if>
 	<portal-logic:if loggedIn="no">
 	<%-- Sign up Link --%>
 	<c:if test="${deviceClass != 'smartphone'}">
-	<li class="wpthemeFirst" id="wpthemeSignUp">
+	<li id="wwpthemeSignUp">
 		<portal-internal:adminlinkinfo name="SELFCARE">
 		<portal-navigation:urlGeneration allowRelativeURL="true" contentNode="<%=wpsContentNode%>" layoutNode='<%= wpsCompositionNode %>' portletWindowState="Normal" themeTemplate="">
 		<portal-navigation:urlParam type="render" name="ao" value="thm"/>
@@ -94,7 +81,7 @@
 	<%-- Login Link --%>
 	<c:set var="endPreviewOperation" value="${wp.operation['ibm.portal.operations.endPreviewMode']}"></c:set>
 	<c:if test="${!endPreviewOperation.isActive}">
-	<li class="wpthemeLast" id="wpthemeLogin">
+	<li id="wwpthemeLogin">
 		<portal-navigation:urlGeneration allowRelativeURL="true" keepNavigationalState="false" contentNode="wps.content.root" home="protected" >
 			<a href='<% wpsURL.write(escapeXmlWriter); %>' ><portal-fmt:text key="link.login" bundle="nls.engine"/></a>
 		</portal-navigation:urlGeneration>
@@ -103,7 +90,7 @@
 	</portal-logic:if>
 	<%--  Top Nav Toggle --%>
 	<c:if test="${deviceClass == 'tablet'}">
-	<li id="wpthemeTopNavToggle">
+	<li id="wpthemeTopNavToggle" style="display:none;">
 	<a role="button" class="wpthemeTopNavToggleBtn" aria-label="<portal-fmt:text key="theme.display.nav" bundle="nls.commonUI"/>" title="<portal-fmt:text key="theme.display.nav" bundle="nls.commonUI"/>" href="javascript:;" onclick="wptheme.toggleMobileTopNav('<portal-fmt:text key="theme.display.nav" bundle="nls.commonUI"/>','<portal-fmt:text key="theme.hide.nav" bundle="nls.commonUI"/>');" id="wpthemeTopNavToggleBtn">
 	&nbsp;<img alt="" src="${wp.themeConfig['resources.modules.ibm.contextRoot']}/themes/html/dynamicSpots/icons/blank.gif">
 	<span class="wpthemeAltText" id="wpthemeTopNavToggleBtnAccess"><portal-fmt:text key="theme.display.nav" bundle="nls.commonUI"/></span>
@@ -114,7 +101,7 @@
 	<portal-logic:if loggedIn="yes">
 	<c:set var="admin" value="<%=com.ibm.portal.ac.data.RoleType.ADMIN%>"/>
 	<c:if test="${!isMobile}">
-	<li id="wpthemeHelp">
+	<li id="wpthemeHelp" style="display:none;">
 			<a id="wpthemeHelpAnchor" class="wpthemeHelp" href="javascript:void(0);" onclick="javascript:window.open('<c:out value="${pageContext.request.contextPath}"/>/iehs/topic/com.ibm.wp.admin.help/admin/h_wp_admin_welcome.html','wpthemeHelp','width=800,height=600')" aria-label="<portal-fmt:text key="help.title" bundle="nls.commonUI"/>" aria-haspopup="true" role="button">
 			<img src="${themeConfig['resources.modules.ibm.contextRoot']}/themes/html/dynamicSpots/icons/blank.gif" alt="">
             <span class="wpthemeAltText"><portal-fmt:text key="help.title" bundle="nls.commonUI"/></span>
