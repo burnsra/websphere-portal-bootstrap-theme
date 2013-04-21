@@ -2,3 +2,10 @@
 @import url("default/contextmenu.css.uncompressed.css");
 @import url("default/default.css.uncompressed.css");
 @import url("default/sidenav.css.uncompressed.css");
+
+.wpthemeSecondaryBanner {
+	margin: 0 0 10px;
+}
+.wpthemeLayoutContainers {
+	padding: 0;
+}

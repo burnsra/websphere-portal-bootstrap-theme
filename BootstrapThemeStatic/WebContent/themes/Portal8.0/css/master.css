@@ -2,3 +2,10 @@
 @import url("default/contextmenu.css");
 @import url("default/default.css");
 @import url("default/sidenav.css");
+
+.wpthemeSecondaryBanner {
+	margin: 0 0 10px;
+}
+.wpthemeLayoutContainers {
+	padding: 0;
+}

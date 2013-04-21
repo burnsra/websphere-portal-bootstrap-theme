@@ -1,5 +1,5 @@
 /*** BODY & DOCUMENT ***/
-body {
+bbody {
 	background-color: #ededed;
 	color: #222;
 	font: 75%/1.5 Arial,Helvetica,sans-serif;
@@ -7,25 +7,25 @@ body {
 	padding: 0;
 }
 	
-.wptheme_ie7 body { 
+.wptheme_ie7 bbody { 
 	position: relative;
 }
 
-body.locale_ja, .locale_ja * {
+bbody.locale_ja, .locale_ja * {
 	font-family: "MS UI Gothic","MS PGothic","Apple Gothic",Arial,Helvetica,sans-serif;
 }
 
-a, a:active { 
+aa, aa:active { 
 	color: #10498F; 
 	text-decoration: none;
 }
 
-a:hover, a:focus { 
+aa:hover, aa:focus { 
 	color: #05386B; 
 	text-decoration: underline;
 }
 
-img {
+iimg {
 	border: 0 none; 
 	vertical-align: middle;
 }
@@ -762,4 +762,11 @@ article, aside, footer, header, hgroup,  nav, section {display:block} /*html 5 e
 /* need to hide the iframe, otherwise a scrollbar will appear on the mobile devices */
 iframe#dj_history {
     display: none;
+}
+
+.wpthemeSecondaryBanner {
+	margin: 0 0 10px;
+}
+.wpthemeLayoutContainers {
+	padding: 0;
 }

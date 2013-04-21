@@ -4,3 +4,9 @@
 @import url("default/defaultRTL.css");
 @import url("default/sidenav.css");
 @import url("default/sidenavRTL.css");
+.wpthemeSecondaryBanner {
+	margin: 0 0 10px;
+}
+.wpthemeLayoutContainers {
+	padding: 0;
+}
