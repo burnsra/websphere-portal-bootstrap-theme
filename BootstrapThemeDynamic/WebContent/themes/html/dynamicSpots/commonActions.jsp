@@ -16,7 +16,7 @@
 	<portal-logic:if loggedIn="yes">
 	<%-- Username is used as a link to 'Edit My Profile' --%>
 	<c:if test="${deviceClass != 'smartphone'}">
-	<li id="wpthemeUserName" class="visible-desktop">	
+	<li class="visible-desktop">
 	<portal-internal:adminlinkinfo name="SELFCARE">
 	<portal-navigation:urlGeneration contentNode="<%=wpsContentNode%>" layoutNode="<%= wpsCompositionNode %>" portletWindowState="Normal" themeTemplate="" portletParameterType="render">
 	<portal-navigation:urlParam type="render" name="ao" value="thm"/>
