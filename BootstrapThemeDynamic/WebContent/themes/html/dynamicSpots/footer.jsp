@@ -53,3 +53,9 @@
 <script id="JS_BootstrapCarousel" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-carousel.js"></script>
 <script id="JS_BootstrapTypeahead" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-typeahead.js"></script>
 <script id="JS_BootstrapAffix" src="/BootstrapThemeStatic/themes/Portal8.0/js/bootstrap-affix.js"></script>
+<script type="text/javascript">
+	$('#utb-project-info').hide();
+	$('.utb-project-quicklink').removeAttr('class');
+	$('#utb-edit-mode-quicklink').unwrap().wrap('<ul class="nav visible-desktop"/>').wrap('<li/>');
+	$('#utb-view-mode-quicklink').unwrap().wrap('<ul class="nav visible-desktop"/>').wrap('<li/>');
+</script>
