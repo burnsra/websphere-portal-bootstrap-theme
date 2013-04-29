@@ -11,7 +11,7 @@
 </portal-logic:if>
 <hr />
 <div class="row">
-	<div class="col-span-<c:out value="${columnCount}"/>">
+	<div class="col col-lg-<c:out value="${columnCount}"/>">
 		<h2><portal-fmt:text key="help.title" bundle="nls.commonUI"/></h2>
 		<ul class="list-unstyled">
 			<li><a href="http://www.ibm.com/websphere/portal/library"><portal-fmt:text key="help.documentation" bundle="nls.commonUI"/></a></li>
@@ -20,7 +20,7 @@
 			<li><a href="http://www.ibm.com/websphere/developer/zones/portal/"><portal-fmt:text key="help.zone" bundle="nls.commonUI"/></a></li>
 		</ul>
 	</div>
-	<div class="col-span-<c:out value="${columnCount}"/>">
+	<div class="col col-lg-<c:out value="${columnCount}"/>">
 		<h2><portal-fmt:text key="support.title" bundle="nls.commonUI"/></h2>
 		<ul class="list-unstyled">
 			<li><a href="http://www.ibm.com/software/genservers/portal/support/"><portal-fmt:text key="support.page" bundle="nls.commonUI"/></a></li>
@@ -29,7 +29,7 @@
 		</ul>
 	</div>
 	<portal-logic:if loggedIn="yes">
-	<div class="col-span-<c:out value="${columnCount}"/>">
+	<div class="col col-lg-<c:out value="${columnCount}"/>">
 		<h2><portal-fmt:text key="search.explore.title" bundle="nls.commonUI"/></h2>
 		<ul class="list-unstyled">
 			<li><a href="?uri=nm:oid:ibm.portal.Search"><portal-fmt:text key="search.center.page" bundle="nls.commonUI"/></a></li>
@@ -56,6 +56,6 @@
 <script type="text/javascript">
 	$('#utb-project-info').hide();
 	$('.utb-project-quicklink').removeAttr('class');
-	$('#utb-edit-mode-quicklink').unwrap().wrap('<ul class="nav visible-desktop"/>').wrap('<li/>');
-	$('#utb-view-mode-quicklink').unwrap().wrap('<ul class="nav visible-desktop"/>').wrap('<li/>');
+	$('#utb-edit-mode-quicklink').unwrap().wrap('<ul class="nav navbar-nav visible-desktop"/>').wrap('<li/>');
+	$('#utb-view-mode-quicklink').unwrap().wrap('<ul class="nav navbar-nav visible-desktop"/>').wrap('<li/>');
 </script>
