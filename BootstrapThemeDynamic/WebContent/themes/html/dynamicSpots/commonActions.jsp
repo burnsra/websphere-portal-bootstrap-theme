@@ -12,7 +12,7 @@
     * deviceClass
     * isMobile --%>
 <c:if test="${isMobile}"><div class="wwpthemeMobile"></c:if>
-<ul class="nav">
+<ul class="nav navbar-nav">
 	<portal-logic:if loggedIn="yes">
 	<%-- Username is used as a link to 'Edit My Profile' --%>
 	<c:if test="${deviceClass != 'smartphone'}">

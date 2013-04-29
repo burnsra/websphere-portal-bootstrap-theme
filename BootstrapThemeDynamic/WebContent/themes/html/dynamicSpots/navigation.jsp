@@ -44,7 +44,7 @@
 			<c:set var="nodeID" value="${wp.identification[node]}"/>
 			<c:if test="${childrenAvailable == false}">
 			<nav>
-				<c:choose><c:when test="${navLevel == 1}"><ul class="nav"></c:when><c:when test="${navLevel == 2}"><ul class="nav nav-tabs<c:if test="${deviceClass == 'smartphone'}"> nav-stacked</c:if>"></c:when><c:otherwise><ul class="nav nav-pills"></c:otherwise></c:choose>
+				<c:choose><c:when test="${navLevel == 1}"><ul class="nav navbar-nav"></c:when><c:when test="${navLevel == 2}"><ul class="nav nav-tabs<c:if test="${deviceClass == 'smartphone'}"> nav-stacked</c:if>"></c:when><c:otherwise><ul class="nav nav-pills"></c:otherwise></c:choose>
 			</c:if>
 				<c:set var="primeNode" value="${primeNavigation && wp.selectionModel[node] != null}"/>
 					<li class="wpthemeNavListItem <c:if test="${wp.selectionModel[node] != null}"> active wpthemeSelected</c:if>">
