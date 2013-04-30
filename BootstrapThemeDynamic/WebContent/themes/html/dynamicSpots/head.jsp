@@ -20,6 +20,7 @@
 <link rel="apple-touch-icon-precomposed" href="/BootstrapThemeStatic/themes/Portal8.0/ico/apple-touch-icon-57-precomposed.png">
 <link rel="shortcut icon" href="/BootstrapThemeStatic/themes/Portal8.0/ico/favicon.png">
 <link id="CSS_Bootstrap" href="/BootstrapThemeStatic/themes/Portal8.0/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link id="CSS_FontAwesome" href="/BootstrapThemeStatic/themes/Portal8.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <%-- link the color palette style set for the page --%><%
 {
 	String colorPaletteUrl = (String)pageContext.getAttribute("colorPaletteUrl", PageContext.REQUEST_SCOPE);

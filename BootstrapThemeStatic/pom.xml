@@ -55,6 +55,16 @@
 										<include name="**"/>
 									</fileset>
 								</copy>
+								<copy todir="./WebContent/themes/Portal8.0/css/" overwrite="true">
+									<fileset dir="../font-awesome/css/">
+										<include name="**font-awesome.min.css"/>
+									</fileset>
+								</copy>
+								<copy todir="./WebContent/themes/Portal8.0/font/" overwrite="true">
+									<fileset dir="../font-awesome/font/">
+										<include name="**"/>
+									</fileset>
+								</copy>
 							</tasks>
 						</configuration>
 						<goals>
